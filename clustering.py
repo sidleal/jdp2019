@@ -38,9 +38,9 @@ def optimal_number_of_clusters(wcss, max_grupos):
     return distances.index(max(distances)) + 2
 
 
-def run_experiments(dataset, dataset_name, num_grupos):
+def run_experiments(dataset, dataset_name, dataset_idx):
 
-    max_grupos = 41
+    max_grupos = 30
     if len(dataset) < max_grupos:
         max_grupos = len(dataset)
 
@@ -50,32 +50,32 @@ def run_experiments(dataset, dataset_name, num_grupos):
     # calculando a quantidade ótima de clusters
     n = optimal_number_of_clusters(sum_of_squares, max_grupos)
 
-    fig = plt.figure()
-    ax = fig.add_subplot(111, projection='3d')
+    fig = plt.figure(figsize=[10,7])
+    ax = fig.add_subplot(221, projection='3d')
     ax.scatter(dataset[:, 0], dataset[:, 1], dataset[:, 2])
 
-    plt.title('RastrOS - %s: ' % dataset_name)
-    plt.show()
+    plt.title('RastrOS - %s ' % dataset_name)
 
-    fig = plt.figure()
-    ax = fig.add_subplot(111)
+    # fig = plt.figure(1)
+    ax = fig.add_subplot(222)
     ax.plot(range(2, max_grupos), sum_of_squares, 'b*-')
     ax.plot(n, sum_of_squares[n-2], marker='o', markersize=12,
         markeredgewidth=2, markeredgecolor='r', markerfacecolor='None')
     plt.grid(True)
     plt.xlabel('Número de Grupos')
     plt.ylabel('Média soma dos quadrados intra-grupo')
-    plt.title('RastrOS - %s: Cotovelo KMeans' % dataset_name)
-    plt.show()
+    plt.title('Cotovelo KMeans')
+    # plt.title('RastrOS - %s: Cotovelo KMeans' % dataset_name)
+    # plt.show()
 
     print("--- %s - número ideal de grupos --> %s" %(dataset_name, n))
 
-    kmeans = KMeans(n_clusters=num_grupos)
+    kmeans = KMeans(n_clusters=n)
     kmeans.fit(dataset)
 
     #grafico 2
-    fig = plt.figure()
-    ax = fig.add_subplot(111, projection='3d')
+    # fig = plt.figure(1)
+    ax = fig.add_subplot(223, projection='3d')
     labels_kmeans = kmeans.labels_
 
     ax.scatter(dataset[:, 0], dataset[:, 1], dataset[:, 2],
@@ -83,30 +83,28 @@ def run_experiments(dataset, dataset_name, num_grupos):
 
     result = {}
     for i in range(0, len(dataset)):
-        ax.text(dataset[i-1, 0], dataset[i-1, 1], dataset[i-1, 2], i)
-        result[i]=labels_kmeans[i-1]
+        ax.text(dataset[i-1, 0], dataset[i-1, 1], dataset[i-1, 2], dataset_idx[i])
+        result[dataset_idx[i]]=labels_kmeans[i-1]
 
-    plt.title('RastrOS - %s: Textos - por índice' % dataset_name)
-    plt.show()
+    plt.title('Textos - por índice')
+    # plt.show()
 
     #grafico 3
-    fig = plt.figure()
-    ax = fig.add_subplot(111, projection='3d')
+    # fig = plt.figure(1)
+    ax = fig.add_subplot(224, projection='3d')
     ax.scatter(dataset[:, 0], dataset[:, 1], dataset[:, 2],
                c=labels_kmeans.astype(np.float), edgecolor='k')
 
     for i in range(0, len(dataset)):
         ax.text(dataset[i-1, 0], dataset[i-1, 1], dataset[i-1, 2], labels_kmeans[i-1])
 
-    plt.title('RastrOS - %s: Grupos' % dataset_name)
+    plt.title('Grupos')
     plt.show()
 
     print("kmeans - %s" % dataset_name, result)
 
     #----------------------- DBSCAN - Density -------------------------
-    eps = 0.375
-    if num_grupos > 15:
-        eps = 0.32
+    eps = 1.1
 
     dbscan = DBSCAN(eps=eps, min_samples=1)
     dbscan.fit(dataset)
@@ -125,7 +123,7 @@ def run_experiments(dataset, dataset_name, num_grupos):
 
 
     #----------------------- AgglomerativeClustering - Hierarchical -------------------------
-    agglomer = AgglomerativeClustering(n_clusters=num_grupos)
+    agglomer = AgglomerativeClustering(n_clusters=n)
     agglomer.fit(dataset)
     labels_agglomer = agglomer.labels_
     result = {}
@@ -212,58 +210,29 @@ def main():
 
     # gêneros
     jornalistico = [1, 2, 3, 4, 5, 6, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 28, 29,
-                    30, 31, 32, 33, 34, 35, 39, 40, 41, 43, 45, 47, 61, 62, 63, 64, 65, 66, 67, 69, 70, 71, 72]
+                    39, 40, 41, 43, 47, 61, 62, 63, 64, 65, 66, 67, 69, 70, 71, 72]
     literario = [30, 31, 32, 33, 34, 35, 45, 51, 68]
     divulgacao = [7, 27, 36, 37, 38, 42, 44, 46, 48, 49, 50, 52, 53, 54, 55, 56, 57, 58, 59, 60, 73, 74, 75, 76, 77, 78,
                   79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100]
 
     X_g = [
-        "Jornalístico", X_r.loc[jornalistico],
-        "Literário", X_r.loc[literario],
-        "Divulgação Científica", X_r.loc[divulgacao]
+        ["Jornalístico", jornalistico],
+        ["Literário", literario],
+        ["Divulgação Científica", divulgacao]
     ]
 
-    for subset in X_g:
-        print(subset[0])
-        X_n = StandardScaler().fit_transform(subset[1])
-        X_pca = pca.fit(X_r).transform(X_n)
-        run_experiments(X_pca, subset[0], 35)
+    for genre in X_g:
+        print(genre[0])
 
+        subset = X_r.loc[genre[1]]
 
-    # print(X_r)
+        X_n = StandardScaler().fit_transform(subset)
+        #X_pca = pca.fit(X_r).transform(X_n)
 
-#     X_n = StandardScaler().fit_transform((X_r))
-# #    y = df.loc[:, 'index']
-#
-#     pca = PCA(n_components=3)
-#     X_pca = pca.fit(X_n).transform(X_n)
-#
-#     X_r = X_pca
-#     #X_r = X_r.values
-#
-#     #grafico 1
-#     fig = plt.figure()
-#     ax = fig.add_subplot(111, projection='3d')
-#     ax.scatter(X_pca[:, 0], X_pca[:, 1], X_pca[:, 2])
-#     #ax.scatter(X_r.iloc[:, 0], X_r.iloc[:, 1], X_r.iloc[:, 2])
-#
-#     plt.title('RastrOS - ')
-#     plt.show()
-#
-#
-#     #gêneros
-#     jornalistico = [1, 2, 3, 4, 5, 6, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 28, 29, 30, 31, 32, 33, 34, 35, 39, 40, 41, 43, 45, 47, 61, 62, 63, 64, 65, 66, 67, 69, 70, 71, 72]
-#     literario = [30, 31, 32, 33, 34, 35, 45, 51, 68]
-#     divulgacao = [7, 27, 36, 37, 38, 42, 44, 46, 48, 49, 50, 52, 53, 54, 55, 56, 57, 58, 59, 60, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100]
-#
-#     X_jorn = X_r[0:71]
-#     # print(X_jorn, len(X_jorn))
-#
-#     X_divu = X_r[72:]
-#     # print(X_divu, len(X_divu))
-#
-#     run_experiments(X_jorn, "Jornalístico", 35)
-#     run_experiments(X_divu, "Divulgação Científica", 15)
+        # X_pca = subset.values
+        # X_pca = X_n
+
+        run_experiments(X_n, genre[0], genre[1])
 
 
 
