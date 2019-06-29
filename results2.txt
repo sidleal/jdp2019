@@ -1,0 +1,585 @@
+===================================== ESTRUTURAIS ===============================================
+
+
+/usr/bin/python3.6 /home/sidleal/sid/usp/jdp2019/clustering.py
+42 7 16 52 117
+Jornalístico
+--- Jornalístico - número ideal de grupos --> 7
+---KMeans silhouette --> 0.3198481753796839
+kmeans - Jornalístico {1: 4, 2: 4, 3: 0, 4: 5, 5: 3, 6: 5, 8: 3, 9: 0, 10: 4, 11: 2, 12: 1, 13: 5, 14: 5, 15: 4, 16: 2, 17: 2, 18: 4, 19: 6, 20: 4, 21: 3, 22: 4, 23: 3, 24: 5, 25: 4, 26: 5, 28: 5, 29: 1, 39: 4, 40: 5, 41: 2, 43: 4, 47: 3, 61: 4, 62: 4, 63: 4, 64: 4, 65: 4, 66: 3, 67: 0, 69: 5, 70: 5, 71: 2, 72: 2}
+---DBScan silhouette --> 0.006414140316929879
+dbscan - Jornalístico - [7.11] {1: 0, 2: 0, 3: 0, 4: 0, 5: 1, 6: 0, 8: 2, 9: 0, 10: 0, 11: 3, 12: 4, 13: 0, 14: 0, 15: 0, 16: 0, 17: 0, 18: 0, 19: 2, 20: 0, 21: 5, 22: 0, 23: 0, 24: 0, 25: 0, 26: 0, 28: 0, 29: 0, 39: 0, 40: 0, 41: 0, 43: 0, 47: 0, 61: 0, 62: 0, 63: 0, 64: 0, 65: 0, 66: 6, 67: 0, 69: 0, 70: 0, 71: 0, 72: 0}
+Homogeneity (kmeans vs dbscan): 24.87%
+Completeness (kmeans vs dbscan): 57.07%
+V-Measure (kmeans vs dbscan): 34.65%
+---Agglomer silhouette --> 0.30221500378835825
+agglomerative - Jornalístico  {1: 4, 2: 4, 3: 6, 4: 2, 5: 3, 6: 1, 8: 2, 9: 6, 10: 4, 11: 5, 12: 0, 13: 1, 14: 1, 15: 4, 16: 5, 17: 5, 18: 4, 19: 0, 20: 4, 21: 3, 22: 4, 23: 3, 24: 1, 25: 4, 26: 4, 28: 1, 29: 0, 39: 4, 40: 1, 41: 1, 43: 4, 47: 3, 61: 4, 62: 4, 63: 4, 64: 4, 65: 4, 66: 2, 67: 6, 69: 1, 70: 1, 71: 1, 72: 5}
+Homogeneity (kmeans vs agglomer): 82.53%
+Completeness (kmeans vs agglomer): 80.88%
+V-Measure (kmeans vs agglomer): 81.69%
+Homogeneity (agglomer vs dbscan): 25.00%
+Completeness (agglomervs dbscan): 58.52%
+V-Measure (agglomer vs dbscan): 35.03%
+Literário
+--- Literário - número ideal de grupos --> 4
+---KMeans silhouette --> 0.33374942777378386
+kmeans - Literário {30: 2, 31: 0, 32: 1, 33: 2, 34: 1, 35: 3, 45: 0, 51: 0, 68: 0}
+---DBScan silhouette --> -0.34981541733584726
+dbscan - Literário - [7.97] {30: 0, 31: 0, 32: 0, 33: 1, 34: 0, 35: 2, 45: 0, 51: 3, 68: 0}
+Homogeneity (kmeans vs dbscan): 47.03%
+Completeness (kmeans vs dbscan): 59.71%
+V-Measure (kmeans vs dbscan): 52.62%
+---Agglomer silhouette --> 0.33374942777378386
+agglomerative - Literário  {30: 2, 31: 0, 32: 1, 33: 2, 34: 1, 35: 3, 45: 0, 51: 0, 68: 0}
+Homogeneity (kmeans vs agglomer): 100.00%
+Completeness (kmeans vs agglomer): 100.00%
+V-Measure (kmeans vs agglomer): 100.00%
+Homogeneity (agglomer vs dbscan): 47.03%
+Completeness (agglomervs dbscan): 59.71%
+V-Measure (agglomer vs dbscan): 52.62%
+Divulgação Científica
+--- Divulgação Científica - número ideal de grupos --> 8
+---KMeans silhouette --> 0.3486635781927099
+kmeans - Divulgação Científica {7: 1, 27: 7, 36: 5, 37: 7, 38: 5, 42: 2, 44: 7, 46: 2, 48: 5, 49: 2, 50: 2, 52: 7, 53: 7, 54: 5, 55: 5, 56: 5, 57: 2, 58: 7, 59: 7, 60: 4, 73: 5, 74: 2, 75: 2, 76: 6, 77: 1, 78: 1, 79: 1, 80: 1, 81: 0, 82: 2, 83: 1, 84: 1, 85: 4, 86: 1, 87: 1, 88: 1, 89: 0, 90: 0, 91: 1, 92: 3, 93: 1, 94: 0, 95: 3, 96: 1, 97: 1, 98: 3, 99: 2, 100: 0}
+---DBScan silhouette --> -0.3658735990385778
+dbscan - Divulgação Científica - [7.21] {7: 0, 27: 0, 36: 0, 37: 1, 38: 2, 42: 0, 44: 0, 46: 0, 48: 0, 49: 0, 50: 0, 52: 0, 53: 0, 54: 0, 55: 0, 56: 0, 57: 0, 58: 0, 59: 3, 60: 4, 73: 0, 74: 0, 75: 0, 76: 5, 77: 0, 78: 6, 79: 6, 80: 0, 81: 0, 82: 0, 83: 0, 84: 7, 85: 0, 86: 0, 87: 0, 88: 0, 89: 0, 90: 0, 91: 0, 92: 0, 93: 0, 94: 0, 95: 0, 96: 0, 97: 0, 98: 0, 99: 0, 100: 0}
+Homogeneity (kmeans vs dbscan): 20.04%
+Completeness (kmeans vs dbscan): 48.44%
+V-Measure (kmeans vs dbscan): 28.35%
+---Agglomer silhouette --> 0.3422169498649268
+agglomerative - Divulgação Científica  {7: 2, 27: 5, 36: 4, 37: 5, 38: 4, 42: 0, 44: 5, 46: 0, 48: 4, 49: 0, 50: 4, 52: 5, 53: 5, 54: 4, 55: 4, 56: 4, 57: 0, 58: 5, 59: 5, 60: 3, 73: 5, 74: 0, 75: 0, 76: 7, 77: 2, 78: 0, 79: 2, 80: 2, 81: 6, 82: 0, 83: 0, 84: 0, 85: 3, 86: 2, 87: 2, 88: 2, 89: 6, 90: 6, 91: 2, 92: 1, 93: 2, 94: 6, 95: 1, 96: 2, 97: 2, 98: 1, 99: 0, 100: 6}
+Homogeneity (kmeans vs agglomer): 86.16%
+Completeness (kmeans vs agglomer): 85.25%
+V-Measure (kmeans vs agglomer): 85.71%
+Homogeneity (agglomer vs dbscan): 18.63%
+Completeness (agglomervs dbscan): 45.51%
+V-Measure (agglomer vs dbscan): 26.44%
+
+Process finished with exit code 0
+
+
+
+
+
+
+===================================== TIPOS ===============================================
+
+
+/usr/bin/python3.6 /home/sidleal/sid/usp/jdp2019/clustering.py
+42 7 16 52 117
+Jornalístico
+--- Jornalístico - número ideal de grupos --> 7
+---KMeans silhouette --> 0.3524964886541629
+kmeans - Jornalístico {1: 2, 2: 0, 3: 6, 4: 2, 5: 3, 6: 6, 8: 6, 9: 6, 10: 5, 11: 6, 12: 1, 13: 2, 14: 1, 15: 3, 16: 0, 17: 6, 18: 5, 19: 3, 20: 3, 21: 3, 22: 2, 23: 3, 24: 5, 25: 2, 26: 3, 28: 5, 29: 3, 39: 2, 40: 5, 41: 5, 43: 2, 47: 2, 61: 6, 62: 6, 63: 2, 64: 2, 65: 0, 66: 4, 67: 0, 69: 0, 70: 5, 71: 6, 72: 0}
+---DBScan silhouette --> -0.2588647453066565
+dbscan - Jornalístico - [1.95] {1: 0, 2: 0, 3: 1, 4: 0, 5: 0, 6: 0, 8: 0, 9: 0, 10: 0, 11: 2, 12: 0, 13: 0, 14: 0, 15: 0, 16: 0, 17: 1, 18: 0, 19: 3, 20: 0, 21: 0, 22: 2, 23: 0, 24: 0, 25: 2, 26: 0, 28: 0, 29: 0, 39: 0, 40: 0, 41: 0, 43: 0, 47: 0, 61: 4, 62: 0, 63: 0, 64: 5, 65: 0, 66: 6, 67: 0, 69: 0, 70: 0, 71: 1, 72: 0}
+Homogeneity (kmeans vs dbscan): 23.24%
+Completeness (kmeans vs dbscan): 44.75%
+V-Measure (kmeans vs dbscan): 30.59%
+---Agglomer silhouette --> 0.342546792250589
+agglomerative - Jornalístico  {1: 2, 2: 4, 3: 1, 4: 2, 5: 3, 6: 1, 8: 1, 9: 1, 10: 0, 11: 1, 12: 6, 13: 2, 14: 6, 15: 0, 16: 4, 17: 1, 18: 0, 19: 3, 20: 3, 21: 3, 22: 2, 23: 3, 24: 0, 25: 2, 26: 3, 28: 0, 29: 3, 39: 2, 40: 0, 41: 0, 43: 2, 47: 2, 61: 1, 62: 1, 63: 2, 64: 2, 65: 4, 66: 5, 67: 4, 69: 4, 70: 0, 71: 1, 72: 4}
+Homogeneity (kmeans vs agglomer): 96.06%
+Completeness (kmeans vs agglomer): 96.06%
+V-Measure (kmeans vs agglomer): 96.06%
+Homogeneity (agglomer vs dbscan): 23.43%
+Completeness (agglomervs dbscan): 45.11%
+V-Measure (agglomer vs dbscan): 30.84%
+Literário
+--- Literário - número ideal de grupos --> 4
+---KMeans silhouette --> 0.2951313003522624
+kmeans - Literário {30: 2, 31: 3, 32: 2, 33: 0, 34: 2, 35: 0, 45: 3, 51: 2, 68: 1}
+---DBScan silhouette --> 0.006141221109678904
+dbscan - Literário - [2.58] {30: 0, 31: 0, 32: 0, 33: 1, 34: 0, 35: 2, 45: 0, 51: 0, 68: 3}
+Homogeneity (kmeans vs dbscan): 66.67%
+Completeness (kmeans vs dbscan): 84.64%
+V-Measure (kmeans vs dbscan): 74.59%
+---Agglomer silhouette --> 0.2652096812927909
+agglomerative - Literário  {30: 3, 31: 1, 32: 3, 33: 0, 34: 3, 35: 0, 45: 1, 51: 0, 68: 2}
+Homogeneity (kmeans vs agglomer): 83.33%
+Completeness (kmeans vs agglomer): 80.93%
+V-Measure (kmeans vs agglomer): 82.12%
+Homogeneity (agglomer vs dbscan): 48.56%
+Completeness (agglomervs dbscan): 63.48%
+V-Measure (agglomer vs dbscan): 55.03%
+Divulgação Científica
+--- Divulgação Científica - número ideal de grupos --> 8
+---KMeans silhouette --> 0.371908883164837
+kmeans - Divulgação Científica {7: 6, 27: 0, 36: 0, 37: 7, 38: 4, 42: 0, 44: 2, 46: 0, 48: 4, 49: 1, 50: 0, 52: 5, 53: 6, 54: 4, 55: 0, 56: 0, 57: 2, 58: 7, 59: 2, 60: 6, 73: 2, 74: 0, 75: 6, 76: 1, 77: 4, 78: 3, 79: 3, 80: 0, 81: 0, 82: 7, 83: 0, 84: 1, 85: 6, 86: 6, 87: 0, 88: 7, 89: 0, 90: 0, 91: 2, 92: 0, 93: 2, 94: 1, 95: 1, 96: 3, 97: 0, 98: 1, 99: 0, 100: 1}
+---DBScan silhouette --> -0.19666154276391454
+dbscan - Divulgação Científica - [2.24] {7: 0, 27: 0, 36: 1, 37: 0, 38: 0, 42: 0, 44: 0, 46: 0, 48: 0, 49: 0, 50: 0, 52: 2, 53: 0, 54: 0, 55: 0, 56: 0, 57: 0, 58: 0, 59: 0, 60: 0, 73: 3, 74: 0, 75: 0, 76: 0, 77: 0, 78: 4, 79: 4, 80: 0, 81: 0, 82: 0, 83: 0, 84: 0, 85: 5, 86: 0, 87: 0, 88: 6, 89: 0, 90: 0, 91: 0, 92: 0, 93: 0, 94: 0, 95: 0, 96: 4, 97: 0, 98: 0, 99: 0, 100: 0}
+Homogeneity (kmeans vs dbscan): 26.67%
+Completeness (kmeans vs dbscan): 67.23%
+V-Measure (kmeans vs dbscan): 38.19%
+---Agglomer silhouette --> 0.3460061902348561
+agglomerative - Divulgação Científica  {7: 0, 27: 1, 36: 1, 37: 6, 38: 4, 42: 1, 44: 2, 46: 1, 48: 4, 49: 3, 50: 1, 52: 5, 53: 0, 54: 4, 55: 1, 56: 1, 57: 2, 58: 6, 59: 2, 60: 0, 73: 2, 74: 1, 75: 0, 76: 3, 77: 4, 78: 7, 79: 7, 80: 1, 81: 1, 82: 6, 83: 1, 84: 3, 85: 0, 86: 0, 87: 1, 88: 6, 89: 1, 90: 1, 91: 2, 92: 1, 93: 2, 94: 3, 95: 3, 96: 7, 97: 0, 98: 3, 99: 0, 100: 3}
+Homogeneity (kmeans vs agglomer): 94.90%
+Completeness (kmeans vs agglomer): 93.14%
+V-Measure (kmeans vs agglomer): 94.01%
+Homogeneity (agglomer vs dbscan): 25.97%
+Completeness (agglomervs dbscan): 66.71%
+V-Measure (agglomer vs dbscan): 37.39%
+
+Process finished with exit code 0
+
+
+
+===================================== CORREF ===============================================
+
+
+
+/usr/bin/python3.6 /home/sidleal/sid/usp/jdp2019/clustering.py
+42 7 16 52 117
+Jornalístico
+--- Jornalístico - número ideal de grupos --> 9
+---KMeans silhouette --> 0.5022551619907571
+kmeans - Jornalístico {1: 8, 2: 4, 3: 0, 4: 0, 5: 0, 6: 7, 8: 0, 9: 0, 10: 0, 11: 0, 12: 0, 13: 4, 14: 0, 15: 2, 16: 7, 17: 1, 18: 4, 19: 0, 20: 8, 21: 0, 22: 5, 23: 0, 24: 8, 25: 4, 26: 2, 28: 4, 29: 0, 39: 0, 40: 8, 41: 4, 43: 4, 47: 0, 61: 0, 62: 4, 63: 0, 64: 1, 65: 6, 66: 0, 67: 0, 69: 3, 70: 0, 71: 2, 72: 3}
+---DBScan silhouette --> -0.22866483040680383
+dbscan - Jornalístico - [2.36] {1: 8, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0, 8: 0, 9: 0, 10: 0, 11: 0, 12: 0, 13: 0, 14: 0, 15: 0, 16: 0, 17: 1, 18: 0, 19: 0, 20: 0, 21: 0, 22: 2, 23: 0, 24: 0, 25: 0, 26: 0, 28: 0, 29: 0, 39: 0, 40: 0, 41: 0, 43: 0, 47: 0, 61: 0, 62: 0, 63: 0, 64: 3, 65: 4, 66: 0, 67: 5, 69: 6, 70: 0, 71: 0, 72: 7}
+Homogeneity (kmeans vs dbscan): 39.21%
+Completeness (kmeans vs dbscan): 75.89%
+V-Measure (kmeans vs dbscan): 51.70%
+---Agglomer silhouette --> 0.4911300835552078
+agglomerative - Jornalístico  {1: 7, 2: 2, 3: 2, 4: 2, 5: 2, 6: 6, 8: 2, 9: 2, 10: 2, 11: 2, 12: 2, 13: 1, 14: 2, 15: 0, 16: 6, 17: 3, 18: 2, 19: 2, 20: 7, 21: 2, 22: 8, 23: 2, 24: 7, 25: 2, 26: 0, 28: 1, 29: 2, 39: 2, 40: 7, 41: 1, 43: 1, 47: 2, 61: 2, 62: 2, 63: 2, 64: 3, 65: 4, 66: 2, 67: 2, 69: 5, 70: 2, 71: 0, 72: 5}
+Homogeneity (kmeans vs agglomer): 85.02%
+Completeness (kmeans vs agglomer): 91.71%
+V-Measure (kmeans vs agglomer): 88.24%
+Homogeneity (agglomer vs dbscan): 42.02%
+Completeness (agglomervs dbscan): 75.39%
+V-Measure (agglomer vs dbscan): 53.96%
+Literário
+--- Literário - número ideal de grupos --> 4
+---KMeans silhouette --> 0.34362800248282765
+kmeans - Literário {30: 0, 31: 0, 32: 3, 33: 1, 34: 2, 35: 1, 45: 1, 51: 0, 68: 1}
+---DBScan silhouette --> 0.109764364229377
+dbscan - Literário - [4.22] {30: 0, 31: 0, 32: 1, 33: 2, 34: 3, 35: 2, 45: 0, 51: 2, 68: 2}
+Homogeneity (kmeans vs dbscan): 61.96%
+Completeness (kmeans vs dbscan): 61.96%
+V-Measure (kmeans vs dbscan): 61.96%
+---Agglomer silhouette --> 0.34362800248282765
+agglomerative - Literário  {30: 0, 31: 0, 32: 2, 33: 1, 34: 3, 35: 1, 45: 1, 51: 0, 68: 1}
+Homogeneity (kmeans vs agglomer): 100.00%
+Completeness (kmeans vs agglomer): 100.00%
+V-Measure (kmeans vs agglomer): 100.00%
+Homogeneity (agglomer vs dbscan): 61.96%
+Completeness (agglomervs dbscan): 61.96%
+V-Measure (agglomer vs dbscan): 61.96%
+Divulgação Científica
+--- Divulgação Científica - número ideal de grupos --> 9
+---KMeans silhouette --> 0.30787106774252687
+kmeans - Divulgação Científica {7: 3, 27: 2, 36: 3, 37: 8, 38: 0, 42: 0, 44: 5, 46: 6, 48: 3, 49: 6, 50: 6, 52: 8, 53: 1, 54: 3, 55: 0, 56: 3, 57: 1, 58: 5, 59: 3, 60: 3, 73: 3, 74: 6, 75: 3, 76: 8, 77: 8, 78: 6, 79: 0, 80: 3, 81: 3, 82: 8, 83: 6, 84: 7, 85: 8, 86: 0, 87: 8, 88: 6, 89: 3, 90: 6, 91: 8, 92: 7, 93: 1, 94: 0, 95: 6, 96: 4, 97: 4, 98: 6, 99: 4, 100: 3}
+---DBScan silhouette --> 0.24982625592221575
+dbscan - Divulgação Científica - [2.77] {7: 1, 27: 0, 36: 1, 37: 1, 38: 1, 42: 1, 44: 2, 46: 1, 48: 1, 49: 1, 50: 1, 52: 1, 53: 1, 54: 1, 55: 1, 56: 1, 57: 1, 58: 3, 59: 1, 60: 1, 73: 1, 74: 1, 75: 1, 76: 1, 77: 1, 78: 1, 79: 1, 80: 1, 81: 1, 82: 1, 83: 1, 84: 4, 85: 1, 86: 1, 87: 1, 88: 1, 89: 1, 90: 1, 91: 1, 92: 5, 93: 1, 94: 1, 95: 1, 96: 1, 97: 6, 98: 1, 99: 7, 100: 1}
+Homogeneity (kmeans vs dbscan): 29.66%
+Completeness (kmeans vs dbscan): 81.92%
+V-Measure (kmeans vs dbscan): 43.55%
+---Agglomer silhouette --> 0.3145828388765
+agglomerative - Divulgação Científica  {7: 3, 27: 7, 36: 3, 37: 2, 38: 8, 42: 8, 44: 0, 46: 5, 48: 3, 49: 5, 50: 5, 52: 2, 53: 2, 54: 3, 55: 8, 56: 3, 57: 0, 58: 4, 59: 3, 60: 3, 73: 3, 74: 5, 75: 3, 76: 2, 77: 2, 78: 5, 79: 8, 80: 3, 81: 3, 82: 2, 83: 5, 84: 6, 85: 2, 86: 1, 87: 2, 88: 5, 89: 3, 90: 5, 91: 2, 92: 6, 93: 2, 94: 1, 95: 5, 96: 1, 97: 1, 98: 5, 99: 1, 100: 3}
+Homogeneity (kmeans vs agglomer): 89.48%
+Completeness (kmeans vs agglomer): 92.10%
+V-Measure (kmeans vs agglomer): 90.77%
+Homogeneity (agglomer vs dbscan): 28.91%
+Completeness (agglomervs dbscan): 77.58%
+V-Measure (agglomer vs dbscan): 42.13%
+
+Process finished with exit code 0
+
+
+
+
+
+
+===================================== MORFO ===============================================
+
+
+/usr/bin/python3.6 /home/sidleal/sid/usp/jdp2019/clustering.py
+42 7 16 52 117
+Jornalístico
+--- Jornalístico - número ideal de grupos --> 12
+---KMeans silhouette --> 0.14028680445585537
+kmeans - Jornalístico {1: 5, 2: 1, 3: 0, 4: 1, 5: 8, 6: 11, 8: 5, 9: 1, 10: 1, 11: 4, 12: 2, 13: 4, 14: 4, 15: 4, 16: 1, 17: 1, 18: 0, 19: 4, 20: 3, 21: 4, 22: 6, 23: 4, 24: 8, 25: 1, 26: 1, 28: 5, 29: 4, 39: 5, 40: 5, 41: 2, 43: 7, 47: 10, 61: 1, 62: 1, 63: 10, 64: 9, 65: 4, 66: 2, 67: 1, 69: 2, 70: 0, 71: 1, 72: 10}
+---DBScan silhouette --> -0.09403063276137026
+dbscan - Jornalístico - [7.43] {1: 11, 2: 0, 3: 1, 4: 0, 5: 0, 6: 2, 8: 0, 9: 0, 10: 0, 11: 0, 12: 0, 13: 0, 14: 0, 15: 0, 16: 0, 17: 0, 18: 3, 19: 0, 20: 0, 21: 0, 22: 4, 23: 0, 24: 5, 25: 0, 26: 0, 28: 0, 29: 0, 39: 0, 40: 0, 41: 0, 43: 6, 47: 0, 61: 0, 62: 0, 63: 0, 64: 0, 65: 7, 66: 8, 67: 0, 69: 9, 70: 10, 71: 0, 72: 0}
+Homogeneity (kmeans vs dbscan): 40.13%
+Completeness (kmeans vs dbscan): 71.51%
+V-Measure (kmeans vs dbscan): 51.41%
+---Agglomer silhouette --> 0.157485389088676
+agglomerative - Jornalístico  {1: 3, 2: 8, 3: 3, 4: 8, 5: 2, 6: 10, 8: 3, 9: 8, 10: 8, 11: 7, 12: 4, 13: 7, 14: 7, 15: 7, 16: 8, 17: 8, 18: 0, 19: 7, 20: 11, 21: 7, 22: 5, 23: 7, 24: 2, 25: 8, 26: 1, 28: 3, 29: 7, 39: 3, 40: 3, 41: 4, 43: 6, 47: 7, 61: 1, 62: 8, 63: 0, 64: 9, 65: 1, 66: 4, 67: 1, 69: 1, 70: 8, 71: 0, 72: 0}
+Homogeneity (kmeans vs agglomer): 80.24%
+Completeness (kmeans vs agglomer): 78.01%
+V-Measure (kmeans vs agglomer): 79.11%
+Homogeneity (agglomer vs dbscan): 34.55%
+Completeness (agglomervs dbscan): 63.32%
+V-Measure (agglomer vs dbscan): 44.71%
+Literário
+--- Literário - número ideal de grupos --> 6
+---KMeans silhouette --> 0.07515863340027878
+kmeans - Literário {30: 2, 31: 1, 32: 2, 33: 0, 34: 0, 35: 5, 45: 4, 51: 0, 68: 3}
+---DBScan silhouette --> -0.09009502306761255
+dbscan - Literário - [7.91] {30: 5, 31: 0, 32: 1, 33: 2, 34: 1, 35: 1, 45: 3, 51: 1, 68: 4}
+Homogeneity (kmeans vs dbscan): 72.44%
+Completeness (kmeans vs dbscan): 76.84%
+V-Measure (kmeans vs dbscan): 74.58%
+---Agglomer silhouette --> 0.07515863340027878
+agglomerative - Literário  {30: 2, 31: 5, 32: 2, 33: 0, 34: 0, 35: 3, 45: 4, 51: 0, 68: 1}
+Homogeneity (kmeans vs agglomer): 100.00%
+Completeness (kmeans vs agglomer): 100.00%
+V-Measure (kmeans vs agglomer): 100.00%
+Homogeneity (agglomer vs dbscan): 72.44%
+Completeness (agglomervs dbscan): 76.84%
+V-Measure (agglomer vs dbscan): 74.58%
+Divulgação Científica
+--- Divulgação Científica - número ideal de grupos --> 7
+---KMeans silhouette --> 0.21622387760484663
+kmeans - Divulgação Científica {7: 6, 27: 4, 36: 4, 37: 6, 38: 5, 42: 1, 44: 5, 46: 6, 48: 5, 49: 3, 50: 5, 52: 2, 53: 1, 54: 5, 55: 1, 56: 5, 57: 3, 58: 2, 59: 3, 60: 4, 73: 5, 74: 6, 75: 1, 76: 6, 77: 1, 78: 0, 79: 0, 80: 6, 81: 1, 82: 1, 83: 1, 84: 1, 85: 4, 86: 6, 87: 1, 88: 3, 89: 6, 90: 6, 91: 3, 92: 6, 93: 6, 94: 6, 95: 1, 96: 0, 97: 1, 98: 5, 99: 1, 100: 6}
+---DBScan silhouette --> -0.2936195529152927
+dbscan - Divulgação Científica - [8.52] {7: 0, 27: 0, 36: 0, 37: 0, 38: 1, 42: 0, 44: 2, 46: 3, 48: 0, 49: 0, 50: 0, 52: 0, 53: 0, 54: 0, 55: 0, 56: 0, 57: 0, 58: 0, 59: 0, 60: 0, 73: 4, 74: 0, 75: 0, 76: 0, 77: 0, 78: 0, 79: 5, 80: 0, 81: 0, 82: 0, 83: 0, 84: 0, 85: 0, 86: 0, 87: 0, 88: 0, 89: 0, 90: 0, 91: 0, 92: 0, 93: 0, 94: 0, 95: 0, 96: 0, 97: 0, 98: 0, 99: 0, 100: 6}
+Homogeneity (kmeans vs dbscan): 13.50%
+Completeness (kmeans vs dbscan): 39.43%
+V-Measure (kmeans vs dbscan): 20.11%
+---Agglomer silhouette --> 0.22132218911722332
+agglomerative - Divulgação Científica  {7: 3, 27: 2, 36: 2, 37: 3, 38: 1, 42: 0, 44: 1, 46: 3, 48: 1, 49: 6, 50: 1, 52: 4, 53: 0, 54: 1, 55: 0, 56: 1, 57: 6, 58: 4, 59: 6, 60: 2, 73: 1, 74: 0, 75: 0, 76: 3, 77: 0, 78: 5, 79: 5, 80: 3, 81: 0, 82: 0, 83: 0, 84: 0, 85: 2, 86: 3, 87: 0, 88: 6, 89: 0, 90: 3, 91: 0, 92: 3, 93: 0, 94: 3, 95: 0, 96: 5, 97: 0, 98: 1, 99: 0, 100: 3}
+Homogeneity (kmeans vs agglomer): 86.32%
+Completeness (kmeans vs agglomer): 88.42%
+V-Measure (kmeans vs agglomer): 87.35%
+Homogeneity (agglomer vs dbscan): 14.53%
+Completeness (agglomervs dbscan): 41.43%
+V-Measure (agglomer vs dbscan): 21.52%
+
+Process finished with exit code 0
+
+
+
+
+
+===================================== ALL ===============================================
+
+
+/usr/bin/python3.6 /home/sidleal/sid/usp/jdp2019/clustering.py
+42 7 16 52 117
+Jornalístico
+--- Jornalístico - número ideal de grupos --> 7
+---KMeans silhouette --> 0.29338664404511033
+kmeans - Jornalístico {1: 6, 2: 6, 3: 4, 4: 1, 5: 3, 6: 0, 8: 3, 9: 4, 10: 6, 11: 0, 12: 2, 13: 0, 14: 1, 15: 6, 16: 0, 17: 0, 18: 6, 19: 5, 20: 1, 21: 3, 22: 1, 23: 3, 24: 1, 25: 6, 26: 1, 28: 1, 29: 2, 39: 6, 40: 1, 41: 0, 43: 6, 47: 3, 61: 6, 62: 6, 63: 6, 64: 6, 65: 6, 66: 3, 67: 4, 69: 0, 70: 1, 71: 0, 72: 0}
+---DBScan silhouette --> -0.49951512301060064
+dbscan - Jornalístico - [13.12] {1: 6, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0, 8: 0, 9: 0, 10: 0, 11: 0, 12: 0, 13: 0, 14: 0, 15: 0, 16: 0, 17: 0, 18: 0, 19: 0, 20: 0, 21: 0, 22: 1, 23: 0, 24: 0, 25: 0, 26: 0, 28: 0, 29: 0, 39: 0, 40: 0, 41: 0, 43: 0, 47: 0, 61: 0, 62: 0, 63: 0, 64: 2, 65: 3, 66: 4, 67: 0, 69: 5, 70: 0, 71: 0, 72: 0}
+Homogeneity (kmeans vs dbscan): 12.02%
+Completeness (kmeans vs dbscan): 31.38%
+V-Measure (kmeans vs dbscan): 17.39%
+---Agglomer silhouette --> 0.2919983232990013
+agglomerative - Jornalístico  {1: 4, 2: 4, 3: 6, 4: 2, 5: 3, 6: 1, 8: 2, 9: 6, 10: 4, 11: 5, 12: 0, 13: 1, 14: 1, 15: 4, 16: 5, 17: 5, 18: 4, 19: 0, 20: 4, 21: 3, 22: 4, 23: 3, 24: 1, 25: 4, 26: 4, 28: 1, 29: 0, 39: 4, 40: 1, 41: 1, 43: 4, 47: 3, 61: 4, 62: 4, 63: 4, 64: 4, 65: 4, 66: 2, 67: 6, 69: 1, 70: 1, 71: 1, 72: 5}
+Homogeneity (kmeans vs agglomer): 74.84%
+Completeness (kmeans vs agglomer): 74.87%
+V-Measure (kmeans vs agglomer): 74.86%
+Homogeneity (agglomer vs dbscan): 11.48%
+Completeness (agglomervs dbscan): 29.95%
+V-Measure (agglomer vs dbscan): 16.60%
+Literário
+--- Literário - número ideal de grupos --> 4
+---KMeans silhouette --> 0.3303792127917229
+kmeans - Literário {30: 0, 31: 3, 32: 1, 33: 0, 34: 1, 35: 2, 45: 3, 51: 3, 68: 3}
+---DBScan silhouette --> -0.19475259188962984
+dbscan - Literário - [13.62] {30: 0, 31: 0, 32: 1, 33: 2, 34: 2, 35: 3, 45: 2, 51: 2, 68: 2}
+Homogeneity (kmeans vs dbscan): 46.43%
+Completeness (kmeans vs dbscan): 51.44%
+V-Measure (kmeans vs dbscan): 48.81%
+---Agglomer silhouette --> 0.3303792127917229
+agglomerative - Literário  {30: 2, 31: 0, 32: 1, 33: 2, 34: 1, 35: 3, 45: 0, 51: 0, 68: 0}
+Homogeneity (kmeans vs agglomer): 100.00%
+Completeness (kmeans vs agglomer): 100.00%
+V-Measure (kmeans vs agglomer): 100.00%
+Homogeneity (agglomer vs dbscan): 46.43%
+Completeness (agglomervs dbscan): 51.44%
+V-Measure (agglomer vs dbscan): 48.81%
+Divulgação Científica
+--- Divulgação Científica - número ideal de grupos --> 7
+---KMeans silhouette --> 0.3297521496487716
+kmeans - Divulgação Científica {7: 0, 27: 1, 36: 4, 37: 1, 38: 4, 42: 3, 44: 1, 46: 3, 48: 4, 49: 4, 50: 4, 52: 1, 53: 1, 54: 4, 55: 4, 56: 4, 57: 4, 58: 1, 59: 1, 60: 1, 73: 4, 74: 3, 75: 3, 76: 6, 77: 0, 78: 3, 79: 3, 80: 0, 81: 5, 82: 3, 83: 3, 84: 3, 85: 6, 86: 0, 87: 0, 88: 0, 89: 5, 90: 5, 91: 0, 92: 2, 93: 0, 94: 5, 95: 2, 96: 0, 97: 3, 98: 2, 99: 3, 100: 5}
+---DBScan silhouette --> -0.32588621620198527
+dbscan - Divulgação Científica - [12.99] {7: 1, 27: 0, 36: 1, 37: 1, 38: 2, 42: 1, 44: 3, 46: 4, 48: 1, 49: 1, 50: 1, 52: 1, 53: 1, 54: 1, 55: 1, 56: 1, 57: 1, 58: 1, 59: 1, 60: 1, 73: 5, 74: 1, 75: 1, 76: 1, 77: 1, 78: 1, 79: 1, 80: 1, 81: 1, 82: 1, 83: 1, 84: 1, 85: 6, 86: 1, 87: 1, 88: 1, 89: 1, 90: 1, 91: 1, 92: 1, 93: 1, 94: 1, 95: 1, 96: 1, 97: 1, 98: 1, 99: 1, 100: 1}
+Homogeneity (kmeans vs dbscan): 13.55%
+Completeness (kmeans vs dbscan): 41.00%
+V-Measure (kmeans vs dbscan): 20.36%
+---Agglomer silhouette --> 0.3230335638048412
+agglomerative - Divulgação Científica  {7: 1, 27: 4, 36: 6, 37: 4, 38: 6, 42: 1, 44: 4, 46: 3, 48: 6, 49: 3, 50: 3, 52: 4, 53: 4, 54: 6, 55: 3, 56: 6, 57: 3, 58: 4, 59: 4, 60: 0, 73: 6, 74: 3, 75: 3, 76: 0, 77: 1, 78: 1, 79: 1, 80: 1, 81: 5, 82: 3, 83: 1, 84: 1, 85: 0, 86: 1, 87: 1, 88: 1, 89: 5, 90: 5, 91: 1, 92: 2, 93: 1, 94: 5, 95: 2, 96: 1, 97: 1, 98: 2, 99: 3, 100: 5}
+Homogeneity (kmeans vs agglomer): 79.16%
+Completeness (kmeans vs agglomer): 79.95%
+V-Measure (kmeans vs agglomer): 79.55%
+Homogeneity (agglomer vs dbscan): 15.05%
+Completeness (agglomervs dbscan): 45.11%
+V-Measure (agglomer vs dbscan): 22.57%
+
+Process finished with exit code 0
+
+
+
+
+
+===================================== ALL C/ PCA ===============================================
+
+
+/usr/bin/python3.6 /home/sidleal/sid/usp/jdp2019/clustering.py
+42 7 16 52 117
+Jornalístico
+--- Jornalístico - número ideal de grupos --> 8
+---KMeans silhouette --> 0.2941569503999041
+kmeans - Jornalístico {1: 7, 2: 1, 3: 1, 4: 3, 5: 2, 6: 1, 8: 2, 9: 1, 10: 6, 11: 0, 12: 4, 13: 3, 14: 3, 15: 0, 16: 3, 17: 5, 18: 0, 19: 2, 20: 0, 21: 2, 22: 5, 23: 2, 24: 3, 25: 3, 26: 3, 28: 3, 29: 2, 39: 6, 40: 6, 41: 3, 43: 1, 47: 2, 61: 1, 62: 1, 63: 0, 64: 5, 65: 1, 66: 4, 67: 1, 69: 0, 70: 6, 71: 0, 72: 0}
+---DBScan silhouette --> -0.02732648905787416
+dbscan - Jornalístico - [0.93] {1: 7, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0, 8: 0, 9: 0, 10: 1, 11: 0, 12: 2, 13: 0, 14: 0, 15: 0, 16: 0, 17: 3, 18: 0, 19: 0, 20: 0, 21: 0, 22: 4, 23: 0, 24: 0, 25: 0, 26: 0, 28: 0, 29: 0, 39: 0, 40: 0, 41: 0, 43: 0, 47: 0, 61: 0, 62: 0, 63: 0, 64: 5, 65: 0, 66: 2, 67: 0, 69: 6, 70: 0, 71: 0, 72: 0}
+Homogeneity (kmeans vs dbscan): 33.48%
+Completeness (kmeans vs dbscan): 76.16%
+V-Measure (kmeans vs dbscan): 46.51%
+---Agglomer silhouette --> 0.31928213488636503
+agglomerative - Jornalístico  {1: 6, 2: 3, 3: 5, 4: 4, 5: 1, 6: 3, 8: 1, 9: 5, 10: 3, 11: 0, 12: 7, 13: 0, 14: 4, 15: 0, 16: 0, 17: 2, 18: 0, 19: 1, 20: 0, 21: 1, 22: 2, 23: 1, 24: 0, 25: 0, 26: 0, 28: 0, 29: 1, 39: 3, 40: 4, 41: 4, 43: 3, 47: 1, 61: 5, 62: 3, 63: 0, 64: 2, 65: 5, 66: 7, 67: 3, 69: 0, 70: 3, 71: 0, 72: 0}
+Homogeneity (kmeans vs agglomer): 79.07%
+Completeness (kmeans vs agglomer): 82.02%
+V-Measure (kmeans vs agglomer): 80.52%
+Homogeneity (agglomer vs dbscan): 33.01%
+Completeness (agglomervs dbscan): 72.39%
+V-Measure (agglomer vs dbscan): 45.34%
+Literário
+--- Literário - número ideal de grupos --> 4
+---KMeans silhouette --> 0.3507669213229193
+kmeans - Literário {30: 2, 31: 2, 32: 3, 33: 0, 34: 1, 35: 1, 45: 0, 51: 1, 68: 0}
+---DBScan silhouette --> 0.08193665960352378
+dbscan - Literário - [1.4] {30: 3, 31: 0, 32: 1, 33: 2, 34: 2, 35: 2, 45: 2, 51: 2, 68: 2}
+Homogeneity (kmeans vs dbscan): 64.75%
+Completeness (kmeans vs dbscan): 84.64%
+V-Measure (kmeans vs dbscan): 73.37%
+---Agglomer silhouette --> 0.32025902228655995
+agglomerative - Literário  {30: 1, 31: 1, 32: 3, 33: 2, 34: 0, 35: 0, 45: 2, 51: 0, 68: 0}
+Homogeneity (kmeans vs agglomer): 80.93%
+Completeness (kmeans vs agglomer): 83.33%
+V-Measure (kmeans vs agglomer): 82.12%
+Homogeneity (agglomer vs dbscan): 66.67%
+Completeness (agglomervs dbscan): 84.64%
+V-Measure (agglomer vs dbscan): 74.59%
+Divulgação Científica
+--- Divulgação Científica - número ideal de grupos --> 9
+---KMeans silhouette --> 0.2918587974239208
+kmeans - Divulgação Científica {7: 4, 27: 7, 36: 8, 37: 4, 38: 6, 42: 2, 44: 0, 46: 3, 48: 2, 49: 1, 50: 1, 52: 0, 53: 4, 54: 8, 55: 2, 56: 1, 57: 0, 58: 0, 59: 8, 60: 0, 73: 4, 74: 1, 75: 4, 76: 1, 77: 4, 78: 2, 79: 2, 80: 1, 81: 3, 82: 1, 83: 1, 84: 5, 85: 0, 86: 5, 87: 1, 88: 1, 89: 1, 90: 3, 91: 8, 92: 3, 93: 0, 94: 2, 95: 1, 96: 2, 97: 3, 98: 1, 99: 3, 100: 2}
+---DBScan silhouette --> -0.079542386070943
+dbscan - Divulgação Científica - [0.89] {7: 1, 27: 0, 36: 1, 37: 1, 38: 2, 42: 1, 44: 3, 46: 1, 48: 1, 49: 1, 50: 1, 52: 1, 53: 1, 54: 4, 55: 1, 56: 1, 57: 1, 58: 1, 59: 1, 60: 5, 73: 1, 74: 1, 75: 1, 76: 1, 77: 1, 78: 1, 79: 1, 80: 1, 81: 1, 82: 1, 83: 1, 84: 6, 85: 1, 86: 7, 87: 1, 88: 1, 89: 1, 90: 1, 91: 1, 92: 1, 93: 3, 94: 1, 95: 1, 96: 1, 97: 8, 98: 1, 99: 8, 100: 1}
+Homogeneity (kmeans vs dbscan): 32.71%
+Completeness (kmeans vs dbscan): 68.44%
+V-Measure (kmeans vs dbscan): 44.26%
+---Agglomer silhouette --> 0.2613644262402051
+agglomerative - Divulgação Científica  {7: 6, 27: 4, 36: 3, 37: 6, 38: 5, 42: 0, 44: 8, 46: 2, 48: 0, 49: 6, 50: 3, 52: 7, 53: 6, 54: 0, 55: 1, 56: 0, 57: 3, 58: 8, 59: 7, 60: 7, 73: 0, 74: 0, 75: 6, 76: 6, 77: 6, 78: 1, 79: 1, 80: 0, 81: 2, 82: 0, 83: 0, 84: 1, 85: 8, 86: 1, 87: 3, 88: 3, 89: 0, 90: 2, 91: 3, 92: 2, 93: 8, 94: 1, 95: 0, 96: 0, 97: 2, 98: 0, 99: 2, 100: 1}
+Homogeneity (kmeans vs agglomer): 68.26%
+Completeness (kmeans vs agglomer): 67.47%
+V-Measure (kmeans vs agglomer): 67.86%
+Homogeneity (agglomer vs dbscan): 28.68%
+Completeness (agglomervs dbscan): 60.73%
+V-Measure (agglomer vs dbscan): 38.96%
+
+Process finished with exit code 0
+
+
+
+================================= RESUMO =============================
+
+
+===================================== ESTRUTURAIS ===============================================
+
+--- Jornalístico - número ideal de grupos --> 7
+---KMeans silhouette --> 0.3198481753796839
+---DBScan silhouette --> 0.006414140316929879
+---Agglomer silhouette-> 0.30221500378835825
+V-Measure (kmeans vs dbscan): 34.65%
+V-Measure (kmeans vs agglomer): 81.69%
+V-Measure (agglomer vs dbscan): 35.03%
+
+--- Literário - número ideal de grupos --> 4
+---KMeans silhouette --> 0.33374942777378386
+---DBScan silhouette --> -0.34981541733584726
+---Agglomer silhouette-> 0.33374942777378386
+V-Measure (kmeans vs dbscan): 52.62%
+V-Measure (kmeans vs agglomer): 100.00%
+V-Measure (agglomer vs dbscan): 52.62%
+
+--- Divulgação Científica - número ideal de grupos --> 8
+---KMeans silhouette --> 0.3486635781927099
+---DBScan silhouette --> -0.3658735990385778
+---Agglomer silhouette-> 0.3422169498649268
+V-Measure (kmeans vs dbscan): 28.35%
+V-Measure (kmeans vs agglomer): 85.71%
+V-Measure (agglomer vs dbscan): 26.44%
+
+
+===================================== TIPOS ===============================================
+
+--- Jornalístico - número ideal de grupos --> 7
+---KMeans silhouette --> 0.3524964886541629
+---DBScan silhouette --> -0.2588647453066565
+---Agglomer silhouette-> 0.342546792250589
+V-Measure (kmeans vs dbscan): 30.59%
+V-Measure (kmeans vs agglomer): 96.06%
+V-Measure (agglomer vs dbscan): 30.84%
+
+--- Literário - número ideal de grupos --> 4
+---KMeans silhouette --> 0.2951313003522624
+---DBScan silhouette --> 0.006141221109678904
+---Agglomer silhouette-> 0.2652096812927909
+V-Measure (kmeans vs dbscan): 74.59%
+V-Measure (kmeans vs agglomer): 82.12%
+V-Measure (agglomer vs dbscan): 55.03%
+
+--- Divulgação Científica - número ideal de grupos --> 8
+---KMeans silhouette --> 0.371908883164837
+---DBScan silhouette --> -0.19666154276391454
+V-Measure (kmeans vs dbscan): 38.19%
+---Agglomer silhouette --> 0.3460061902348561
+V-Measure (kmeans vs agglomer): 94.01%
+V-Measure (agglomer vs dbscan): 37.39%
+
+
+===================================== CORREF ===============================================
+
+--- Jornalístico - número ideal de grupos --> 9
+---KMeans silhouette --> 0.5022551619907571
+---DBScan silhouette --> -0.22866483040680383
+---Agglomer silhouette-> 0.4911300835552078
+V-Measure (kmeans vs dbscan): 51.70%
+V-Measure (kmeans vs agglomer): 88.24%
+V-Measure (agglomer vs dbscan): 53.96%
+
+--- Literário - número ideal de grupos --> 4
+---KMeans silhouette --> 0.34362800248282765
+---DBScan silhouette --> 0.109764364229377
+---Agglomer silhouette-> 0.34362800248282765
+V-Measure (kmeans vs dbscan): 61.96%
+V-Measure (kmeans vs agglomer): 100.00%
+V-Measure (agglomer vs dbscan): 61.96%
+
+--- Divulgação Científica - número ideal de grupos --> 9
+---KMeans silhouette --> 0.30787106774252687
+---DBScan silhouette --> 0.24982625592221575
+---Agglomer silhouette-> 0.3145828388765
+V-Measure (kmeans vs dbscan): 43.55%
+V-Measure (kmeans vs agglomer): 90.77%
+V-Measure (agglomer vs dbscan): 42.13%
+
+
+
+===================================== MORFO ===============================================
+--- Jornalístico - número ideal de grupos --> 12
+---KMeans silhouette --> 0.14028680445585537
+---DBScan silhouette --> -0.09403063276137026
+---Agglomer silhouette-> 0.157485389088676
+V-Measure (kmeans vs dbscan): 51.41%
+V-Measure (kmeans vs agglomer): 79.11%
+V-Measure (agglomer vs dbscan): 44.71%
+
+--- Literário - número ideal de grupos --> 6
+---KMeans silhouette --> 0.07515863340027878
+---DBScan silhouette --> -0.09009502306761255
+---Agglomer silhouette-> 0.07515863340027878
+V-Measure (kmeans vs dbscan): 74.58%
+V-Measure (kmeans vs agglomer): 100.00%
+V-Measure (agglomer vs dbscan): 74.58%
+
+--- Divulgação Científica - número ideal de grupos --> 7
+---KMeans silhouette --> 0.21622387760484663
+---DBScan silhouette --> -0.2936195529152927
+---Agglomer silhouette-> 0.22132218911722332
+V-Measure (kmeans vs dbscan): 20.11%
+V-Measure (kmeans vs agglomer): 87.35%
+V-Measure (agglomer vs dbscan): 21.52%
+
+
+
+===================================== ALL ===============================================
+--- Jornalístico - número ideal de grupos --> 7
+---KMeans silhouette --> 0.29338664404511033
+---DBScan silhouette --> -0.49951512301060064
+---Agglomer silhouette-> 0.2919983232990013
+V-Measure (kmeans vs dbscan): 17.39%
+V-Measure (kmeans vs agglomer): 74.86%
+V-Measure (agglomer vs dbscan): 16.60%
+
+--- Literário - número ideal de grupos --> 4
+---KMeans silhouette --> 0.3303792127917229
+---DBScan silhouette --> -0.19475259188962984
+---Agglomer silhouette-> 0.3303792127917229
+V-Measure (kmeans vs dbscan): 48.81%
+V-Measure (kmeans vs agglomer): 100.00%
+V-Measure (agglomer vs dbscan): 48.81%
+
+--- Divulgação Científica - número ideal de grupos --> 7
+---KMeans silhouette --> 0.3297521496487716
+---DBScan silhouette --> -0.32588621620198527
+---Agglomer silhouette-> 0.3230335638048412
+V-Measure (kmeans vs dbscan): 20.36%
+V-Measure (kmeans vs agglomer): 79.55%
+V-Measure (agglomer vs dbscan): 22.57%
+
+
+===================================== ALL C/ PCA ===============================================
+--- Jornalístico - número ideal de grupos --> 8
+---KMeans silhouette --> 0.2941569503999041
+---DBScan silhouette --> -0.02732648905787416
+---Agglomer silhouette-> 0.31928213488636503
+V-Measure (kmeans vs dbscan): 46.51%
+V-Measure (kmeans vs agglomer): 80.52%
+V-Measure (agglomer vs dbscan): 45.34%
+
+--- Literário - número ideal de grupos --> 4
+---KMeans silhouette --> 0.3507669213229193
+---DBScan silhouette --> 0.08193665960352378
+---Agglomer silhouette-> 0.32025902228655995
+V-Measure (kmeans vs dbscan): 73.37%
+V-Measure (kmeans vs agglomer): 82.12%
+V-Measure (agglomer vs dbscan): 74.59%
+
+--- Divulgação Científica - número ideal de grupos --> 9
+---KMeans silhouette --> 0.2918587974239208
+---DBScan silhouette --> -0.079542386070943
+---Agglomer silhouette-> 0.2613644262402051
+V-Measure (kmeans vs dbscan): 44.26%
+V-Measure (kmeans vs agglomer): 67.86%
+V-Measure (agglomer vs dbscan): 38.96%
+
+
+
+
+
+
+========================================= menos features =========================================
+
+
+-------------all_sel com PCA -----------------------
+
+/usr/bin/python3.6 /home/sidleal/sid/usp/jdp2019/clustering.py
+22 7 10 21 60
+Jornalístico
+--- Jornalístico - número ideal de grupos --> 8
+---KMeans silhouette --> 0.39899176402451153
+kmeans - Jornalístico {1: 6, 2: 3, 3: 1, 4: 4, 5: 0, 6: 1, 8: 0, 9: 1, 10: 7, 11: 3, 12: 5, 13: 3, 14: 4, 15: 3, 16: 0, 17: 2, 18: 3, 19: 0, 20: 3, 21: 0, 22: 2, 23: 0, 24: 4, 25: 4, 26: 3, 28: 3, 29: 0, 39: 4, 40: 4, 41: 4, 43: 1, 47: 0, 61: 1, 62: 1, 63: 3, 64: 2, 65: 1, 66: 5, 67: 1, 69: 3, 70: 1, 71: 3, 72: 3}
+---Agglomer silhouette --> 0.34405423003740254
+agglomerative - Jornalístico  {1: 5, 2: 0, 3: 3, 4: 0, 5: 1, 6: 3, 8: 1, 9: 3, 10: 4, 11: 7, 12: 6, 13: 0, 14: 4, 15: 7, 16: 0, 17: 2, 18: 7, 19: 1, 20: 0, 21: 1, 22: 2, 23: 1, 24: 0, 25: 0, 26: 7, 28: 0, 29: 1, 39: 0, 40: 4, 41: 4, 43: 3, 47: 1, 61: 3, 62: 3, 63: 0, 64: 2, 65: 3, 66: 6, 67: 3, 69: 7, 70: 3, 71: 7, 72: 7}
+Homogeneity (kmeans vs agglomer): 84.87%
+Completeness (kmeans vs agglomer): 80.43%
+V-Measure (kmeans vs agglomer): 82.59%
+Literário
+--- Literário - número ideal de grupos --> 4
+---KMeans silhouette --> 0.33140576318692616
+kmeans - Literário {30: 1, 31: 1, 32: 3, 33: 2, 34: 0, 35: 0, 45: 2, 51: 0, 68: 2}
+---Agglomer silhouette --> 0.33140576318692616
+agglomerative - Literário  {30: 3, 31: 3, 32: 2, 33: 1, 34: 0, 35: 0, 45: 1, 51: 0, 68: 1}
+Homogeneity (kmeans vs agglomer): 100.00%
+Completeness (kmeans vs agglomer): 100.00%
+V-Measure (kmeans vs agglomer): 100.00%
+Divulgação Científica
+--- Divulgação Científica - número ideal de grupos --> 10
+---KMeans silhouette --> 0.31791037331528593
+kmeans - Divulgação Científica {7: 9, 27: 2, 36: 0, 37: 2, 38: 4, 42: 1, 44: 2, 46: 3, 48: 3, 49: 0, 50: 0, 52: 5, 53: 2, 54: 0, 55: 3, 56: 0, 57: 9, 58: 2, 59: 5, 60: 5, 73: 0, 74: 0, 75: 9, 76: 9, 77: 9, 78: 3, 79: 3, 80: 1, 81: 8, 82: 1, 83: 0, 84: 7, 85: 5, 86: 1, 87: 9, 88: 9, 89: 6, 90: 6, 91: 9, 92: 1, 93: 9, 94: 8, 95: 6, 96: 3, 97: 1, 98: 6, 99: 1, 100: 8}
+---Agglomer silhouette --> 0.2964124466696905
+agglomerative - Divulgação Científica  {7: 3, 27: 1, 36: 4, 37: 1, 38: 5, 42: 0, 44: 3, 46: 0, 48: 0, 49: 0, 50: 0, 52: 6, 53: 1, 54: 0, 55: 0, 56: 0, 57: 4, 58: 1, 59: 6, 60: 6, 73: 0, 74: 0, 75: 4, 76: 3, 77: 4, 78: 0, 79: 0, 80: 2, 81: 8, 82: 2, 83: 0, 84: 7, 85: 6, 86: 2, 87: 4, 88: 4, 89: 9, 90: 2, 91: 4, 92: 2, 93: 3, 94: 2, 95: 9, 96: 0, 97: 2, 98: 9, 99: 2, 100: 8}
+Homogeneity (kmeans vs agglomer): 77.02%
+Completeness (kmeans vs agglomer): 81.22%
+V-Measure (kmeans vs agglomer): 79.06%
+
+Process finished with exit code 0
+
+
+
+-----------------all sel sem PCA -----------------------
