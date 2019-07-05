@@ -583,3 +583,495 @@ Process finished with exit code 0
 
 
 -----------------all sel sem PCA -----------------------
+
+
+/usr/bin/python3.6 /home/sidleal/sid/usp/jdp2019/clustering.py
+22 7 10 21 60
+Jornalístico
+--- Jornalístico - número ideal de grupos --> 8
+---KMeans silhouette --> 0.2809942501977826
+kmeans - Jornalístico {1: 2, 2: 2, 3: 1, 4: 0, 5: 7, 6: 4, 8: 0, 9: 1, 10: 2, 11: 4, 12: 5, 13: 4, 14: 6, 15: 2, 16: 4, 17: 4, 18: 2, 19: 3, 20: 6, 21: 7, 22: 6, 23: 7, 24: 6, 25: 2, 26: 6, 28: 6, 29: 5, 39: 2, 40: 6, 41: 4, 43: 2, 47: 7, 61: 2, 62: 2, 63: 2, 64: 2, 65: 2, 66: 0, 67: 1, 69: 4, 70: 6, 71: 4, 72: 4}
+---Agglomer silhouette --> 0.2947040149798934
+agglomerative - Jornalístico  {1: 1, 2: 1, 3: 6, 4: 2, 5: 3, 6: 0, 8: 2, 9: 6, 10: 1, 11: 5, 12: 4, 13: 0, 14: 0, 15: 1, 16: 5, 17: 5, 18: 1, 19: 7, 20: 1, 21: 3, 22: 1, 23: 3, 24: 0, 25: 1, 26: 1, 28: 0, 29: 4, 39: 1, 40: 0, 41: 0, 43: 1, 47: 3, 61: 1, 62: 1, 63: 1, 64: 1, 65: 1, 66: 2, 67: 6, 69: 0, 70: 0, 71: 0, 72: 5}
+Homogeneity (kmeans vs agglomer): 81.32%
+Completeness (kmeans vs agglomer): 84.76%
+V-Measure (kmeans vs agglomer): 83.00%
+Literário
+--- Literário - número ideal de grupos --> 4
+---KMeans silhouette --> 0.33440476663265184
+kmeans - Literário {30: 0, 31: 2, 32: 3, 33: 0, 34: 3, 35: 1, 45: 2, 51: 2, 68: 2}
+---Agglomer silhouette --> 0.33440476663265184
+agglomerative - Literário  {30: 2, 31: 0, 32: 1, 33: 2, 34: 1, 35: 3, 45: 0, 51: 0, 68: 0}
+Homogeneity (kmeans vs agglomer): 100.00%
+Completeness (kmeans vs agglomer): 100.00%
+V-Measure (kmeans vs agglomer): 100.00%
+Divulgação Científica
+--- Divulgação Científica - número ideal de grupos --> 8
+---KMeans silhouette --> 0.3508685396012943
+kmeans - Divulgação Científica {7: 5, 27: 3, 36: 4, 37: 3, 38: 4, 42: 1, 44: 3, 46: 1, 48: 4, 49: 1, 50: 1, 52: 3, 53: 3, 54: 4, 55: 4, 56: 4, 57: 1, 58: 3, 59: 3, 60: 7, 73: 3, 74: 1, 75: 1, 76: 0, 77: 5, 78: 5, 79: 5, 80: 5, 81: 2, 82: 1, 83: 5, 84: 1, 85: 7, 86: 5, 87: 5, 88: 5, 89: 2, 90: 2, 91: 5, 92: 6, 93: 5, 94: 2, 95: 6, 96: 5, 97: 5, 98: 6, 99: 1, 100: 2}
+---Agglomer silhouette --> 0.33829346585503095
+agglomerative - Divulgação Científica  {7: 2, 27: 5, 36: 4, 37: 5, 38: 4, 42: 0, 44: 5, 46: 0, 48: 4, 49: 0, 50: 4, 52: 5, 53: 5, 54: 4, 55: 4, 56: 4, 57: 0, 58: 5, 59: 5, 60: 3, 73: 5, 74: 0, 75: 0, 76: 7, 77: 2, 78: 0, 79: 2, 80: 2, 81: 6, 82: 0, 83: 0, 84: 0, 85: 3, 86: 2, 87: 2, 88: 2, 89: 6, 90: 6, 91: 2, 92: 1, 93: 2, 94: 6, 95: 1, 96: 2, 97: 2, 98: 1, 99: 0, 100: 6}
+Homogeneity (kmeans vs agglomer): 90.95%
+Completeness (kmeans vs agglomer): 90.20%
+V-Measure (kmeans vs agglomer): 90.57%
+
+Process finished with exit code 0
+
+
+
+================================= sem standard scaller ---- all_sel com pca ===========================
+
+
+/usr/bin/python3.6 /home/sidleal/sid/usp/jdp2019/clustering.py
+22 7 10 21 60
+Jornalístico
+--- Jornalístico - número ideal de grupos --> 8
+---KMeans silhouette --> 0.367635304223889
+kmeans - Jornalístico {1: 1, 2: 1, 3: 4, 4: 5, 5: 3, 6: 6, 8: 5, 9: 4, 10: 1, 11: 2, 12: 7, 13: 6, 14: 6, 15: 1, 16: 2, 17: 2, 18: 1, 19: 0, 20: 1, 21: 3, 22: 1, 23: 3, 24: 6, 25: 1, 26: 6, 28: 6, 29: 7, 39: 1, 40: 6, 41: 2, 43: 1, 47: 3, 61: 1, 62: 1, 63: 1, 64: 1, 65: 1, 66: 5, 67: 4, 69: 6, 70: 6, 71: 6, 72: 2}
+---Agglomer silhouette --> 0.3955556067061868
+agglomerative - Jornalístico  {1: 1, 2: 1, 3: 6, 4: 3, 5: 4, 6: 2, 8: 3, 9: 6, 10: 1, 11: 5, 12: 0, 13: 2, 14: 2, 15: 1, 16: 5, 17: 5, 18: 1, 19: 0, 20: 1, 21: 4, 22: 1, 23: 4, 24: 2, 25: 1, 26: 2, 28: 2, 29: 0, 39: 1, 40: 7, 41: 5, 43: 7, 47: 4, 61: 1, 62: 1, 63: 1, 64: 1, 65: 1, 66: 3, 67: 6, 69: 2, 70: 2, 71: 7, 72: 5}
+Homogeneity (kmeans vs agglomer): 95.01%
+Completeness (kmeans vs agglomer): 89.34%
+V-Measure (kmeans vs agglomer): 92.08%
+Literário
+--- Literário - número ideal de grupos --> 4
+---KMeans silhouette --> 0.39277862137710723
+kmeans - Literário {30: 0, 31: 2, 32: 1, 33: 0, 34: 1, 35: 3, 45: 2, 51: 2, 68: 2}
+---Agglomer silhouette --> 0.39277862137710723
+agglomerative - Literário  {30: 2, 31: 0, 32: 1, 33: 2, 34: 1, 35: 3, 45: 0, 51: 0, 68: 0}
+Homogeneity (kmeans vs agglomer): 100.00%
+Completeness (kmeans vs agglomer): 100.00%
+V-Measure (kmeans vs agglomer): 100.00%
+Divulgação Científica
+--- Divulgação Científica - número ideal de grupos --> 7
+---KMeans silhouette --> 0.3765815609939631
+kmeans - Divulgação Científica {7: 1, 27: 4, 36: 3, 37: 4, 38: 3, 42: 0, 44: 4, 46: 0, 48: 3, 49: 0, 50: 0, 52: 4, 53: 4, 54: 3, 55: 3, 56: 3, 57: 0, 58: 4, 59: 4, 60: 4, 73: 3, 74: 0, 75: 0, 76: 6, 77: 1, 78: 1, 79: 1, 80: 1, 81: 2, 82: 0, 83: 1, 84: 1, 85: 6, 86: 1, 87: 1, 88: 1, 89: 2, 90: 2, 91: 1, 92: 5, 93: 1, 94: 2, 95: 5, 96: 1, 97: 1, 98: 5, 99: 0, 100: 2}
+---Agglomer silhouette --> 0.35080510932722153
+agglomerative - Divulgação Científica  {7: 0, 27: 2, 36: 4, 37: 2, 38: 4, 42: 1, 44: 2, 46: 1, 48: 4, 49: 1, 50: 4, 52: 2, 53: 2, 54: 4, 55: 4, 56: 4, 57: 1, 58: 2, 59: 2, 60: 2, 73: 2, 74: 1, 75: 1, 76: 0, 77: 6, 78: 1, 79: 6, 80: 6, 81: 5, 82: 1, 83: 1, 84: 1, 85: 0, 86: 6, 87: 6, 88: 6, 89: 5, 90: 5, 91: 6, 92: 3, 93: 0, 94: 5, 95: 3, 96: 6, 97: 6, 98: 3, 99: 1, 100: 5}
+Homogeneity (kmeans vs agglomer): 82.32%
+Completeness (kmeans vs agglomer): 79.30%
+V-Measure (kmeans vs agglomer): 80.78%
+
+Process finished with exit code 0
+
+
+------------------
+
+
+
+
+22 + 7 + 10 + 21 = 60
+
+--- Jornalístico - número ideal de grupos --> 8
+---KMeans silhouette   --> 0.367635304223889
+---Agglomer silhouette --> 0.3955556067061868
+V-Measure (kmeans vs agglomer): 92.08%
+
+--- Literário - número ideal de grupos --> 4
+---KMeans silhouette   --> 0.39277862137710723
+---Agglomer silhouette --> 0.39277862137710723
+V-Measure (kmeans vs agglomer): 100.00%
+
+--- Divulgação Científica - número ideal de grupos --> 7
+---KMeans silhouette   --> 0.3765815609939631
+---Agglomer silhouette --> 0.35080510932722153
+V-Measure (kmeans vs agglomer): 80.78%
+
+
+
+
+
+   # complexidade estrutural do período (períodos simples vs. compostos)
+    estruturais = ['words_per_sentence', 'sentences', 'words', 'sentence_length_max', 'sentence_length_min',
+                   'sentence_length_standard_deviation', 'yngve', 'frazier', 'dep_distance', 'words_before_main_verb',
+                   'clauses_per_sentence', 'sentences_with_five_clauses', 'sentences_with_four_clauses',
+                   'sentences_with_seven_more_clauses', 'sentences_with_six_clauses', 'sentences_with_three_clauses',
+                   'punctuation_diversity', 'punctuation_ratio', 'non_svo_ratio', 'sentences_with_one_clause',
+                   'sentences_with_two_clauses', 'sentences_with_zero_clause']
+
+    # tipos de sentenças (ativas/passivas/relativas)
+    tipos_sentenca = ['passive_ratio', 'relative_clauses', 'relative_pronouns_diversity_ratio', 'subordinate_clauses',
+                      'infinite_subordinate_clauses', 'coordinate_conjunctions_per_clauses', 'apposition_per_clause']
+
+    # mecanismos de construção de relações de correferência, entre outros
+    correferencia = ['adjacent_refs', 'anaphoric_refs', 'adj_arg_ovl', 'arg_ovl', 'adj_stem_ovl', 'stem_ovl',
+                     'adj_cw_ovl', 'span_mean', 'span_std', 'coreference_pronoum_ratio']
+
+    # informações sobre as categorias gramaticais: adjectives, adverbs, conjunctions, determiners, nouns, prepositions,
+    # pronouns,  verbs; e flexão dos substantivos e verbos.
+    morfossintaticas = ['adjective_ratio', 'adverbs', 'noun_ratio', 'verbs', 'pronoun_ratio',
+                        'adjectives_standard_deviation', 'adverbs_max', 'adverbs_min', 'adverbs_standard_deviation',
+                        'verbal_time_moods_diversity', 'nouns_max', 'nouns_min', 'nouns_standard_deviation',
+                        'preposition_diversity', 'pronouns_max', 'pronouns_min', 'pronouns_standard_deviation',
+                        'verbs_max', 'verbs_min', 'verbs_standard_deviation', 'syllables_per_content_word']
+
+=============================================
+
+silhouette
+
+
+============================================
+
+/usr/bin/python3.6 /home/sidleal/sid/usp/jdp2019/clustering.py
+22 7 10 21 60
+Jornalístico
+--- Jornalístico - número ideal de grupos --> 7
+---KMeans silhouette --> 0.38374236618108115
+kmeans - Jornalístico {1: 1, 2: 1, 3: 6, 4: 3, 5: 4, 6: 5, 8: 3, 9: 6, 10: 1, 11: 0, 12: 2, 13: 5, 14: 5, 15: 1, 16: 0, 17: 0, 18: 1, 19: 2, 20: 1, 21: 4, 22: 1, 23: 4, 24: 5, 25: 1, 26: 5, 28: 5, 29: 4, 39: 1, 40: 5, 41: 0, 43: 1, 47: 4, 61: 1, 62: 1, 63: 1, 64: 1, 65: 1, 66: 3, 67: 6, 69: 5, 70: 5, 71: 5, 72: 0}
+---Agglomer silhouette --> 0.37766695854071136
+agglomerative - Jornalístico  {1: 1, 2: 1, 3: 6, 4: 3, 5: 4, 6: 0, 8: 3, 9: 6, 10: 1, 11: 5, 12: 2, 13: 0, 14: 0, 15: 1, 16: 5, 17: 5, 18: 1, 19: 2, 20: 1, 21: 4, 22: 1, 23: 4, 24: 0, 25: 1, 26: 0, 28: 0, 29: 2, 39: 1, 40: 0, 41: 5, 43: 0, 47: 4, 61: 1, 62: 1, 63: 1, 64: 1, 65: 1, 66: 3, 67: 6, 69: 0, 70: 0, 71: 0, 72: 5}
+Homogeneity (kmeans vs agglomer): 92.89%
+Completeness (kmeans vs agglomer): 91.76%
+V-Measure (kmeans vs agglomer): 92.32%
+For n_clusters = 2 The average silhouette_score is : 0.5687438034954292
+For n_clusters = 3 The average silhouette_score is : 0.42952401501000603
+For n_clusters = 4 The average silhouette_score is : 0.4279163066756833
+For n_clusters = 5 The average silhouette_score is : 0.4018595784373144
+For n_clusters = 6 The average silhouette_score is : 0.38283021603005457
+For n_clusters = 7 The average silhouette_score is : 0.38374236618108115
+For n_clusters = 8 The average silhouette_score is : 0.3728405509972019
+For n_clusters = 9 The average silhouette_score is : 0.3690318440775493
+For n_clusters = 10 The average silhouette_score is : 0.32048512000403034
+Literário
+--- Literário - número ideal de grupos --> 4
+---KMeans silhouette --> 0.39277862137710723
+kmeans - Literário {30: 3, 31: 1, 32: 2, 33: 3, 34: 2, 35: 0, 45: 1, 51: 1, 68: 1}
+---Agglomer silhouette --> 0.39277862137710723
+agglomerative - Literário  {30: 2, 31: 0, 32: 1, 33: 2, 34: 1, 35: 3, 45: 0, 51: 0, 68: 0}
+Homogeneity (kmeans vs agglomer): 100.00%
+Completeness (kmeans vs agglomer): 100.00%
+V-Measure (kmeans vs agglomer): 100.00%
+For n_clusters = 2 The average silhouette_score is : 0.6431766441307308
+For n_clusters = 3 The average silhouette_score is : 0.5216025355422182
+For n_clusters = 4 The average silhouette_score is : 0.39277862137710723
+For n_clusters = 5 The average silhouette_score is : 0.2904678956031097
+For n_clusters = 6 The average silhouette_score is : 0.22543212125071177
+For n_clusters = 7 The average silhouette_score is : 0.14188273995420278
+Divulgação Científica
+--- Divulgação Científica - número ideal de grupos --> 7
+---KMeans silhouette --> 0.3765815609939631
+kmeans - Divulgação Científica {7: 1, 27: 3, 36: 6, 37: 3, 38: 6, 42: 0, 44: 3, 46: 0, 48: 6, 49: 0, 50: 0, 52: 3, 53: 3, 54: 6, 55: 6, 56: 6, 57: 0, 58: 3, 59: 3, 60: 3, 73: 6, 74: 0, 75: 0, 76: 4, 77: 1, 78: 1, 79: 1, 80: 1, 81: 2, 82: 0, 83: 1, 84: 1, 85: 4, 86: 1, 87: 1, 88: 1, 89: 2, 90: 2, 91: 1, 92: 5, 93: 1, 94: 2, 95: 5, 96: 1, 97: 1, 98: 5, 99: 0, 100: 2}
+---Agglomer silhouette --> 0.35080510932722153
+agglomerative - Divulgação Científica  {7: 0, 27: 2, 36: 4, 37: 2, 38: 4, 42: 1, 44: 2, 46: 1, 48: 4, 49: 1, 50: 4, 52: 2, 53: 2, 54: 4, 55: 4, 56: 4, 57: 1, 58: 2, 59: 2, 60: 2, 73: 2, 74: 1, 75: 1, 76: 0, 77: 6, 78: 1, 79: 6, 80: 6, 81: 5, 82: 1, 83: 1, 84: 1, 85: 0, 86: 6, 87: 6, 88: 6, 89: 5, 90: 5, 91: 6, 92: 3, 93: 0, 94: 5, 95: 3, 96: 6, 97: 6, 98: 3, 99: 1, 100: 5}
+Homogeneity (kmeans vs agglomer): 82.32%
+Completeness (kmeans vs agglomer): 79.30%
+V-Measure (kmeans vs agglomer): 80.78%
+For n_clusters = 2 The average silhouette_score is : 0.37036329551190345
+For n_clusters = 3 The average silhouette_score is : 0.33906874263337344
+For n_clusters = 4 The average silhouette_score is : 0.35496352743083365
+For n_clusters = 5 The average silhouette_score is : 0.3754539053498938
+For n_clusters = 6 The average silhouette_score is : 0.3695174187047534
+For n_clusters = 7 The average silhouette_score is : 0.3765815609939631
+For n_clusters = 8 The average silhouette_score is : 0.33859286353860846
+For n_clusters = 9 The average silhouette_score is : 0.3509746194248306
+For n_clusters = 10 The average silhouette_score is : 0.34694972089530846
+
+Process finished with exit code 0
+
+
+======================================
+
+22 7 10 21 60
+
+--- Jornalístico - número ideal de grupos --> 7
+V-Measure (kmeans vs agglomer): 92.32%
+For n_clusters = 2 The average silhouette_score is : 0.5687438034954292
+For n_clusters = 3 The average silhouette_score is : 0.42952401501000603
+For n_clusters = 4 The average silhouette_score is : 0.4279163066756833
+For n_clusters = 5 The average silhouette_score is : 0.4018595784373144
+For n_clusters = 6 The average silhouette_score is : 0.38283021603005457
+For n_clusters = 7 The average silhouette_score is : 0.38374236618108115
+For n_clusters = 8 The average silhouette_score is : 0.3728405509972019
+For n_clusters = 9 The average silhouette_score is : 0.3690318440775493
+For n_clusters = 10 The average silhouette_score is : 0.32048512000403034
+
+--- Literário - número ideal de grupos --> 4
+V-Measure (kmeans vs agglomer): 100.00%
+For n_clusters = 2 The average silhouette_score is : 0.6431766441307308
+For n_clusters = 3 The average silhouette_score is : 0.5216025355422182
+For n_clusters = 4 The average silhouette_score is : 0.39277862137710723
+For n_clusters = 5 The average silhouette_score is : 0.2904678956031097
+For n_clusters = 6 The average silhouette_score is : 0.22543212125071177
+For n_clusters = 7 The average silhouette_score is : 0.14188273995420278
+
+--- Divulgação Científica - número ideal de grupos --> 7
+V-Measure (kmeans vs agglomer): 80.78%
+For n_clusters = 2 The average silhouette_score is : 0.37036329551190345
+For n_clusters = 3 The average silhouette_score is : 0.33906874263337344
+For n_clusters = 4 The average silhouette_score is : 0.35496352743083365
+For n_clusters = 5 The average silhouette_score is : 0.3754539053498938
+For n_clusters = 6 The average silhouette_score is : 0.3695174187047534
+For n_clusters = 7 The average silhouette_score is : 0.3765815609939631
+For n_clusters = 8 The average silhouette_score is : 0.33859286353860846
+For n_clusters = 9 The average silhouette_score is : 0.3509746194248306
+For n_clusters = 10 The average silhouette_score is : 0.34694972089530846
+
+
+
+==========================================================
+
+
+/usr/bin/python3.6 /home/sidleal/sid/usp/jdp2019/clustering.py
+22 7 8 21 58
+Jornalístico
+--- Jornalístico - número ideal de grupos --> 7
+---KMeans silhouette --> 0.3837365409748455
+kmeans - Jornalístico {1: 1, 2: 1, 3: 6, 4: 3, 5: 4, 6: 5, 8: 3, 9: 6, 10: 1, 11: 0, 12: 2, 13: 5, 14: 5, 15: 1, 16: 0, 17: 0, 18: 1, 19: 2, 20: 1, 21: 4, 22: 1, 23: 4, 24: 5, 25: 1, 26: 5, 28: 5, 29: 4, 39: 1, 40: 5, 41: 0, 43: 1, 47: 4, 61: 1, 62: 1, 63: 1, 64: 1, 65: 1, 66: 3, 67: 6, 69: 5, 70: 5, 71: 5, 72: 0}
+---Agglomer silhouette --> 0.3776618451215517
+agglomerative - Jornalístico  {1: 1, 2: 1, 3: 6, 4: 3, 5: 4, 6: 0, 8: 3, 9: 6, 10: 1, 11: 5, 12: 2, 13: 0, 14: 0, 15: 1, 16: 5, 17: 5, 18: 1, 19: 2, 20: 1, 21: 4, 22: 1, 23: 4, 24: 0, 25: 1, 26: 0, 28: 0, 29: 2, 39: 1, 40: 0, 41: 5, 43: 0, 47: 4, 61: 1, 62: 1, 63: 1, 64: 1, 65: 1, 66: 3, 67: 6, 69: 0, 70: 0, 71: 0, 72: 5}
+Homogeneity (kmeans vs agglomer): 92.89%
+Completeness (kmeans vs agglomer): 91.76%
+V-Measure (kmeans vs agglomer): 92.32%
+Literário
+--- Literário - número ideal de grupos --> 4
+---KMeans silhouette --> 0.39278599049754637
+kmeans - Literário {30: 3, 31: 1, 32: 2, 33: 3, 34: 2, 35: 0, 45: 1, 51: 1, 68: 1}
+---Agglomer silhouette --> 0.39278599049754637
+agglomerative - Literário  {30: 2, 31: 0, 32: 1, 33: 2, 34: 1, 35: 3, 45: 0, 51: 0, 68: 0}
+Homogeneity (kmeans vs agglomer): 100.00%
+Completeness (kmeans vs agglomer): 100.00%
+V-Measure (kmeans vs agglomer): 100.00%
+Divulgação Científica
+--- Divulgação Científica - número ideal de grupos --> 7
+---KMeans silhouette --> 0.376581403099496
+kmeans - Divulgação Científica {7: 1, 27: 3, 36: 6, 37: 3, 38: 6, 42: 0, 44: 3, 46: 0, 48: 6, 49: 0, 50: 0, 52: 3, 53: 3, 54: 6, 55: 6, 56: 6, 57: 0, 58: 3, 59: 3, 60: 3, 73: 6, 74: 0, 75: 0, 76: 4, 77: 1, 78: 1, 79: 1, 80: 1, 81: 2, 82: 0, 83: 1, 84: 1, 85: 4, 86: 1, 87: 1, 88: 1, 89: 2, 90: 2, 91: 1, 92: 5, 93: 1, 94: 2, 95: 5, 96: 1, 97: 1, 98: 5, 99: 0, 100: 2}
+---Agglomer silhouette --> 0.3508065799678504
+agglomerative - Divulgação Científica  {7: 0, 27: 2, 36: 4, 37: 2, 38: 4, 42: 1, 44: 2, 46: 1, 48: 4, 49: 1, 50: 4, 52: 2, 53: 2, 54: 4, 55: 4, 56: 4, 57: 1, 58: 2, 59: 2, 60: 2, 73: 2, 74: 1, 75: 1, 76: 0, 77: 6, 78: 1, 79: 6, 80: 6, 81: 5, 82: 1, 83: 1, 84: 1, 85: 0, 86: 6, 87: 6, 88: 6, 89: 5, 90: 5, 91: 6, 92: 3, 93: 0, 94: 5, 95: 3, 96: 6, 97: 6, 98: 3, 99: 1, 100: 5}
+Homogeneity (kmeans vs agglomer): 82.32%
+Completeness (kmeans vs agglomer): 79.30%
+V-Measure (kmeans vs agglomer): 80.78%
+
+Process finished with exit code 0
+
+
+
+& 0,384	& 0,378	& 0,929	& 0,918	& 0,923
+& 0,393	& 0,393	& 1,000	& 1,000	& 1,000
+& 0,377	& 0,351	& 0,823	& 0,793	& 0,808
+
+
+
+
+=====================================================
+
+
+
+============================================= Gênero: Divulgação Científica Grupo 0 =============================================
+50 Pesquisadores da Universidade Federal do Rio de Janeiro (UFRJ) identificaram, em camundongos, três regiões do principal gene responsável pelo desenvolvimento da cabeça e de outras estruturas básicas do embrião. Mutações nesse gene podem levar a problemas de malformação em uma série de órgãos e tecidos, como braços, pernas, válvulas cardíacas, tubo neural, dentes e ossos da face, além de causar retardo mental. 
+---------------------
+74 Termos como “fake news” e “pós-verdade” ganharam popularidade em 2016, durante as eleições americanas. As redes sociais foram apontadas como corresponsáveis pela improvável vitória de Donald Trump para presidente dos Estados Unidos. Segundo os críticos, as empresas de tecnologia transformaram-se num ninho de desinformação e manipulação de opinião pública e pouco fizeram para contornar o problema. Desde então, Google, Facebook, Twitter e outras companhias que ganham dinheiro distribuindo o conteúdo de terceiros anunciaram medidas para tentar conter a proliferação de notícias falsas e desinformação.
+---------------------
+99 Vivemos em plena era do excesso. Vamos pelo mundo como ilhas ambulantes, a flutuar num oceano coalhado de produtos industrializados de todos os tipos, de medicamentos farmacêuticos, de poluição ambiental, de guarda-roupas cheios de peças inúteis, de constantes propagandas que nos conduzem à produtividade e ao consumismo insustentáveis. Sem falar no excesso de informação feita sob medida para poluir e intoxicar nossas mentes e nossos corações. Já parou para pensar na quantidade de coisas veiculadas pelos jornais, revistas, pela televisão e pelos milhões de sites na internet que, sem dó nem piedade, bombardeiam todos os dias nossas frágeis estruturas cerebrais? Tudo que é demais faz mal. Intoxica. E intoxicação, como verbete de dicionário, corresponde a uma “série de efeitos sintomáticos produzidos quando uma substância tóxica é ingerida ou entra em contato com a pele, olhos ou membranas mucosas”. 
+---------------------
+42 Tamanho, peso e tempo de desenvolvimento são consideradas características quantitativas, termo usado em oposição às características descontínuas, como cores de olhos, tons de pele, entre outras. A maior parte das características genéticas são quantitativas, pois dependem de muitos genes, como por exemplo, em seres humanos, a probabilidade de um indivíduo desenvolver uma doença como o câncer ou ter uma combinação genética com aptidão para a música, matemática etc. 
+---------------------
+46 O estrógeno deve ser recebido diariamente. A mulher pode tomar comprimidos, colar no corpo "adesivos" de liberação gradual ou passar na pele uma espécie de gel. As doses de hormônio são muito menores do que as doses usadas na pílula anticoncepcional. 
+---------------------
+75 Se você bater os olhos na definição de “escrita criativa”,  dificilmente achará que ela tem alguma coisa a ver com o trabalho de um administrador, médico, contador ou empresário — ou qualquer outro profissional que não atue no universo da literatura. Faça o teste: “campo de estudo acadêmico que nos permite investigar, refletir e teorizar sobre o texto literário, a partir da prática”, define o escritor gaúcho Reginaldo Pujol Filho, coordenador do curso de criação textual “.TXT” na escola Perestroika e autor do livro “Só faltou o título” (Record, 2015). A atividade se refere a “tudo que é escrito de modo criativo, ou seja, nem técnico, nem copiado”, explica o jornalista Ronaldo Bressane, autor do romance “Escalpo” (Reformatório, 2017) e professor de cursos sobre narrativas breves.
+---------------------
+49 Nos últimos tempos, o crescente desenvolvimento da genética tem suscitado discussões acaloradas. Os críticos descrevem um cenário aterrador: a criação de uma sociedade homogênea, a perda de privacidade, a ameaça à própria condição humana. Os avanços em neurotecnologia - que permitem manipular o cérebro e modular as emoções - levantam questões éticas e legais da mesma natureza e gravidade que os da genética. Até recentemente, a maioria das experiências com cérebro humano não era considerada ética
+---------------------
+57 Ao juntar concreto com escória de alumínio, o engenheiro metalurgista consegue um novo produto que vai baratear o custo dos materiais utilizados na construção civil. É um tipo especial de argamassa classificada como concreto celular, que dá um fim útil - de forma inédita - à escória de alumínio, um resíduo poluente da industrialização desse metal.
+---------------------
+82 A ciência tem visto com interesse cada vez maior as características que envolvem o relacionamento entre os cães e os seres humanos, e a sequência de resultados positivos observados chama a atenção de qualquer um. Estudos recentes já haviam mostrado que as pessoas acompanhadas por cães tendem a obter respostas mais prestativas de outros e que a presença desses animais no local de trabalho pode reduzir o estresse. Agora, outro aspecto se soma aos anteriores: os cães podem ser benéficos para as interações sociais em equipes. A conclusão apareceu em um estudo publicado em 2017 na revista Anthrozoos.
+
+============================================= Gênero: Divulgação Científica Grupo 1 =============================================
+88 No dia 1º de abril de 2017, o arquiteto português Marco Antunes, de 39 anos, subiu ao palco montado na Associação Espiral, no Centro de Lisboa, para apresentar um projeto extraordinário. Com o auxílio de uma maquete e de uma sequência de slides em PowerPoint, descortinou diante da plateia de 25 pessoas as formas de uma construção em estilo futurista, uma espécie de anel, interligada a outros três prédios menores, circulares. “O edifício ficará no meio de um parque”, explicou Antunes. “Terá duas entradas, uma ao norte e outra ao sul. Aqui no terraço fica a pista de pouso, com capacidade para receber um engenho com 12 metros de diâmetro.” Na tela onde projetava as imagens de seu computador, pôde-se ver a que tipo de “engenho” o arquiteto se referia. Numa espécie de plataforma anexa à construção principal, repousava um imponente disco voador.
+---------------------
+80 O termo “psicopata” caiu na boca do povo, embora na maioria das vezes seja usado de forma equivocada. Na verdade, poucos transtornos são tão incompreendidos quanto a personalidade psicopática.  Descrita pela primeira vez em 1941 pelo psiquiatra americano Hervey M. Cleckley, do Medical College da Geórgia, a psicopatia consiste num conjunto de comportamentos e traços de personalidade específicos. Encantadoras à primeira vista, essas pessoas geralmente causam boa impressão e são tidas como “normais” pelos que as conhecem superficialmente. No entanto, costumam ser egocêntricas, desonestas e indignas de confiança. Com frequência adotam comportamentos irresponsáveis sem razão aparente, exceto pelo fato de se divertirem com o sofrimento alheio. Os psicopatas não sentem culpa. Nos relacionamentos amorosos são insensíveis e detestam compromisso. Sempre têm desculpas para seus descuidos, em geral culpando outras pessoas. Raramente aprendem com seus erros ou conseguem frear impulsos.
+---------------------
+93 Há 2300 mil anos, já havia turismo no Egito. E os turistas de então não deviam ter uma fama muito melhor que a dos modernos. "O Vale dos Reis já era um ponto turístico na antiguidade. Assim como hoje, os turistas muitas vezes assinaram seus nomes nos lugares que visitaram. Entre as mais de sessenta tumbas nesta área, em pelo menos dez há inscrições feitas por turistas antigos" – diz Prof. Adam Łukaszewicz, arqueólogo do Instituto de Arqueologia da Universidade de Varsóvia, à Agência de Imprensa Polonesa. Sua equipe acaba de catalogar e traduzir as mais de mil pichações feitas ao longo de muitos séculos no ricamente decorado túmulo do faraó Ramsés VI, que reinou entre 1145 e 1137 a.C. E o resultado é que eles eram ainda mais parecidos com turistas modernos do seria de se imaginar.
+---------------------
+83 Em 1857, o escritor britânico George Eliot escreveu: “Os animais são amigos muito agradáveis. Não fazem perguntas nem manifestam desaprovação”. Essa natureza afável de cães, gatos, peixes e outros bichos intriga pesquisadores que buscam descobrir quais seriam os seus poderes terapêuticos ainda inexplorados. Uma das questões a serem esclarecidas é se os benefícios que eles trazem para a saúde – segundo muitos garantem – são obtidos apenas pela diversão que proporcionam ou se a presença dos bichos pode, de fato, ser considerada terapêutica, a ponto de ser indicada por médicos e psicólogos para auxiliar no tratamento de seus pacientes.
+---------------------
+84 O professor Gonçalo Pereira, do Instituto de Biologia (IB), preserva a conta do restaurante da Fundação de Desenvolvimento da Unicamp (Funcamp), com o verso riscado por ele em 2011, como um símbolo da capacidade da universidade de conectar sua produção científica à demanda pública e privada por inovações em energia. O papel em questão conceitua o roteiro de avanços técnicos necessários para a produção comercial do etanol de segunda geração, o E2G, a partir de biomassa de novas variedades de cana-de-açúcar com maior conteúdo energético, assim como do bagaço e da palha da cana.
+---------------------
+77 "Todos os comportamentos compulsivos têm pelo menos uma coisa em comum, quer seja o álcool, a heroína, a nicotina ou o jogo. A ""droga"" é consumida compulsivamente e a perda de controle vai crescendo progressivamente. A personagem Silvana (Lilian Cabral) da novela da TV Globo, ‘A Força do Querer’ se enquadra neste padrão. É viciada em jogo e não se dá conta. Mente, perde quantias volumosas e se tortura com a situação, não conseguindo mais se controlar frente ao objeto do vício (em seu caso as cartas, roletas e jogos de azar) e tornando um hobby divertido em uma trágica compulsão.
+---------------------
+7 O planejamento da pesquisa concretiza-se mediante a elaboração de um projeto, que é o documento explicitador das ações a serem desenvolvidas ao longo do processo de pesquisa. O projeto deve, portanto, especificar os objetivos da pesquisa, apresentar a justificativa de sua realização, definir a modalidade de pesquisa e determinar os procedimentos de coleta e análise de dados 
+---------------------
+96 Um planeta maior do que a Terra poderia estar se escondendo nas profundezas frias e escuras do Sistema Solar. A presença do astro, que estaria muito além de Plutão, é denunciada pelas órbitas peculiares de um punhado de mundos distantes e gelados. Como descrito no Astronomical Journal, a assinatura gravitacional de um planeta grande está impressa nas órbitas peculiares de mundos remotos. Chamados de objetos transnetunianos extremos, os corpos teimosos traçam estranhos círculos em torno do Sol e intrigam astrônomos há muitos anos. O estranho comportamento desses objetos planetas é uma evidência tentadora de que um nono grande planeta poderia existir no Sistema Solar, embora ele ainda não tenha sido detectado.
+---------------------
+97 O Lago Suwa fica nas Montanhas Kino, no centro do Japão, em uma região chamada de Alpes Japoneses. Quando o lago congela, a variação de temperatura durante o dia provoca expansão e contração do gelo, quebrando na superfície e produzindo uma elevação. Segundo a lenda, o fenômeno, chamado de omiwatari, é formado pelos pés dos deuses Shinto ao cruzar o lago. Todo ano, desde pelo menos 1443, os monges que moram no santuário localizado na ponta do Lago Suwa registram com atenção a data em que a elevação surge. Em 1693, do outro lado do mundo, um comerciante finlandês chamado Olof Ahlbom registra a data e a hora na primavera da quebra do gelo no Rio Torne, na fronteira da Suécia com a Finlândia. Ahlbom parou de fazer os registros em 1715, quando teve que fugir da invasão russa, mas retomou depois de voltar para casa em 1721. Os registros continuam sendo feitos por outros observadores desde então. Quando os cientistas querem analisar o clima do passado, quase sempre recorrem a evidências indiretas – anéis das árvores, camadas centrais do gelo ou depósitos de pólen. Mas os registros sobre gelo no Japão e na Finlândia, os mais antigos desse tipo, fornecem uma ideia mais direta do clima na época dos nossos ancestrais.
+---------------------
+91 Mudanças climáticas estão aquecendo o Ártico mais de duas vezes mais rápido do que qualquer outro lugar no planeta. Uma das consequências mais sérias é o aumento do nível oceânico, o que ameaça nações desde Bangladesh aos Estados Unidos (EUA). Agora, os mares estão se elevando a uma média de 3,2 milímetros por ano globalmente, e prevê-se que eles subam um total entre 0,2 e 2 metros até 2100. Rignot e Dutton dizem que, no Ártico, o lençol de gelo da Groenlândia apresenta o maior risco para os níveis oceânicos porque o derretimento de gelo terrestre é a principal causa para a elevação dos mares - e “a maioria do gelo terrestre do Ártico está presa na Groenlândia”, explica Rignot. São 2,96 milhões de quilômetros cúbicos de gelo cobrindo áreas terrestres agora - e ele está derretendo nos oceanos. Se todo o lençol de gelo da Groenlândia descongelasse, segundo Dutton, ele elevaria em 7 metros, em média, os níveis marinhos. Isso inundaria significantemente megacidades, tais como Mumbai e Hong Kong.
+---------------------
+86 Os celulares são basicamente sistemas de rádio que utilizam frequências eletromagnéticas capazes de transmitir voz, dados e vídeo. Esses sistemas demandam padrões de codificação digital para que os celulares possam fazer a conexão com as estações de rádio base (ERB), obter conteúdo da internet e se comunicar com as operadoras de telefonia móvel. A rede 5G prevê a utilização de frequências muito altas para disponibilizar velocidades de transmissão da ordem de 10 gigabits por segundo (Gbps.). Isso só será possível com tecnologias inovadoras e novas formas de codificação e configuração, além de novos equipamentos nas estações radiobase como antenas adequadas para frequências superiores a 24,0 Gigahertz (GHz).
+---------------------
+87 Nos modelos mais modernos de smartphone, o usuário não precisa mais digitar uma senha para acessar seu conteúdo: basta encostar o dedo no sensor de leitura de impressão digital integrado ao aparelho. Essa é uma das novas aplicações de uma tecnologia que está cada vez mais presente: os sistemas de identificação biométrica. São aparelhos que fazem o reconhecimento do indivíduo por suas características únicas, como a impressão digital, o desenho da palma da mão, os traços do rosto, o formato da íris ou detalhes da voz. Para se ter uma ideia da dinâmica desse mercado, as vendas globais de soluções biométricas devem superar a marca de US$ 30 bilhões em 2021, conforme estudo da consultoria de inteligência de mercado ABI Research, dos Estados Unidos.
+---------------------
+79 Nas últimas três décadas a neurociência vem colocando em xeque muito do que sabíamos, ou pensávamos saber, sobre o funcionamento do cérebro. Talvez uma das mais importantes constatações – base para uma série de outras, aliás – seja a de que o complexo emaranhado de circuitos cerebrais está em constante transformação. Com o desenvolvimento tecnológico, as barreiras da biologia e da medicina foram rompidas e os pesquisadores se valem de conhecimentos da física, da informática, da matemática, da engenharia computacional para ampliar conhecimentos. Até porque, quanto mais estudos são feitos, mais fica claro que ainda sabemos pouco – até mesmo sobre funções de áreas cerebrais.
+---------------------
+78 "O prazer é a sombra da felicidade”, diz um provérbio hindu, para se referir a esse efeito efêmero da exposição a estímulos sensoriais, estéticos ou intelectuais. Embora intrinsecamente satisfatória, a sensação não se sustenta e, muito rapidamente, tende a se tornar neutra ou mesmo desagradável. Ainda que saibamos disso, a maioria de nós corre atrás dessa vivência, insistindo em repeti-la a todo custo. O fenômeno – comum tanto a seres humanos quanto a outros animais – tem fascinado cientistas e, para aprofundar essa compreensão, pesquisadores de várias partes do mundo têm buscado entender o papel da dopamina, uma substância intimamente associada ao bem-estar. No cérebro, o neurotransmissor funciona como uma espécie de senha para a felicidade.
+
+============================================= Gênero: Divulgação Científica Grupo 2 =============================================
+89 Que a água é essencial para a vida, todo mundo sabe. O líquido constitui 66% do corpo humano e está presente no sangue e nas células, além de preencher os espaços entre eles. O corpo perde água a todo o momento por meio do suor, da urina, fezes e expiração, entre outras “rotas de fuga”. Reabastecer os estoques é essencial, mas a reidratação também pode ser excessiva. Uma overdose de água pode ser fatal. No começo de 2007, uma mulher de 28 anos de idade, na Califórnia, morreu após participar de um concurso de uma rádio para ver quem conseguia tomar mais água. Após ingerir seis litros em apenas três horas na competição – cujo prêmio era um videogame Nintendo –, Jennifer Strange vomitou, foi para casa com uma terrível dor de cabeça e morreu de “intoxicação por água”.
+---------------------
+90 Às vezes, olhando para o céu noturno, enxergamos um breve rastro de luz cortando o firmamento - uma estrela cadente, na linguagem popular. No mundo da astronomia, porém, esse rastro luminoso ganha o nome de meteoro, e é gerado pela entrada de uma partícula ou pedaço de rocha espacial na atmosfera terrestre. A observação de meteoros no Brasil vem se intensificando nos últimos três anos, e ganhou um novo capítulo na última segunda-feira, no dia 5 de junho de 2017. Naquele dia, a União Astronômica Internacional (UAI) e o Meteor Data Center (MDC) aceitaram o registro de 23 novas de chuvas de meteoros identificadas por brasileiros.
+---------------------
+81 Quando a seca chega, as árvores podem sofrer - um processo que produz sons. Agora, os cientistas podem ter encontrado a chave para entender esses gritos de ajuda. No laboratório, uma equipe de cientistas franceses capturou o ruído ultrassônico feito por bolhas formadas dentro de árvores estressadas. Como as árvores também produzem ruídos que não estão relacionados aos impactos da seca, os cientistas não tinham sido capazes de discernir quais sons são mais preocupantes. "Com este experimento começamos a compreender a origem dos eventos acústicos em árvores", disse Alexandre Ponomarenko, físico da Universidade de Grenoble, na França, cuja equipe conduziu a pesquisa. 
+---------------------
+100 De uma “garrafada de ervas” – o composto popular encontrado em feiras livres no Norte e Nordeste, vendido em diversas misturas como cura para muitos males – saiu a droga que apresenta, até agora, os melhores resultados em testes contra o HIV. Estudos in vitro demonstraram que o ingenol, substância extraída da planta africana avelós (Euphorbia tirucalli), disseminada no Brasil, age nas células infectadas de forma a induzir a erradicação do vírus. O próximo passo da pesquisa em andamento no laboratório paulista Kyolab, e em outros laboratórios no Brasil, na Alemanha e nos Estados Unidos, são os testes em macacos e cachorros. Se o mecanismo de ação do remédio observado em células isoladas se repetir em animais, o estágio seguinte será realizar experiências em humanos. 
+---------------------
+94 Um trem com numerosos vagões acaba de entrar na Vila Militar, no Rio de Janeiro. Soldados e oficiais que acompanham a chegada têm a impressão de que seu avanço pelo interior do quartel jamais terminará. Nesse dia, 29 de junho de 1944, milhares de homens tomarão seus lugares no interior da composição para dar início à viagem que os levará para a guerra. Um ano e meio de treinamentos e preparativos terminava ali. Ao contrário do que muitos esperavam, o Exército brasileiro havia sido capaz de formar uma divisão para representar o País na guerra mundial contra o nazi-fascismo, que já durava quase cinco anos. Conhecida como Força Expedicionária Brasileira (FEB), a divisão havia sido subdividida em três regimentos de infantaria (o 1º do Rio de Janeiro, o 6º de Caçapava, São Paulo, e o 11º de São João del-Rei, Minas Gerais) e contava também com unidades de artilharia, engenharia, saúde e até com funcionários do Banco do Brasil, responsáveis pelo pagamento dos soldos da tropa em terras estrangeiras. No total, era uma força composta por mais de 25 mil pessoas.
+
+============================================= Gênero: Divulgação Científica Grupo 3 =============================================
+27 Telescópio Espacial Fermi de Raios Gama da NASA detectou um neutrino de alta energia vindo de fora da galáxia. Um grupo internacional de cientistas conseguiu identificar a origem da partícula, que viajou por 3,7 bilhões de anos na velocidade da luz até ser encontrada. A descoberta foi relatada em dois estudos publicados no periódico científico Science.
+---------------------
+52 Que o Brasil pagou para se tornar independente de Portugal, não é novidade. O que não se sabia é que a vultosa soma de 800 contos de réis, o equivalente a 2 milhões de libras esterlinas e quatro vezes o valor da prataria da Coroa, foi gasto para garantir a vinda da valiosa Real Biblioteca em terras brasileiras. 
+---------------------
+53 Os Estados Unidos estão redobrando esforços para criar uma vacina contra o mortal vírus ebola. Dentro dos próximos 18 meses, uma droga experimental já deverá entrar em testes. O medo do bioterrorismo, nascido a partir dos atentados de 11 de setembro, explica a pressa. 
+---------------------
+44 A história dos implantes dentários é muito mais antiga do que qualquer um de nós possa imaginar. Ela começou em 2.000 a.C., data de registro das primeiras reimplantações dentais de que se têm notícia e vem se desenvolvendo até os dias de hoje. Naquela época não havia nem o aprimoramento de instrumentos cirúrgicos, totalmente rústicos; e hoje? Hoje, no Instituto de Ciências Biomédicas da USP, estão sendo desenvolvidas pesquisas com implantes dos mais diferentes metais recobertos pelos mais diferentes revestimentos. 
+---------------------
+59 A restrição gradativa à queima da palha da cana-de-açúcar durante a colheita, determinada por lei estadual, teve como efeito imediato a redução do monóxido de carbono liberado na atmosfera, um alívio considerável para o ambiente e para a saúde das pessoas que vivem nos 350 municípios canavieiros do Estado de São Paulo. 
+---------------------
+60 Minha filha Luísa, de seis anos de idade, ainda está aprendendo a ler e escrever. Mas já é capaz de ligar um dos computadores de casa, "carregar" um programa e passar algum tempo brincando com o Snoopy, o Mickey ou o Coelho Leitor. 
+---------------------
+37 Muito antes da chegada dos portugueses a terras brasileiras; antes ainda do primeiro índio a nascer em solo pátrio, o Brasil já era habitado por seres bastante interessantes, porém muito diferentes. Quais? Eles? Sim, eles mesmos: os dinossauros. 
+---------------------
+58 Microscópicas formas disputam diariamente os nutrientes consumidos por 52% da população brasileira, cerca de 88 milhões de pessoas, segundo dados divulgados no ano passado pela Organização Pan-Americana de Saúde (Opas). O estudo aponta que esses indivíduos carregam no intestino pelo menos uma espécie de parasito: protozoários (amebas, por exemplo) ou helmintos (vermes) responsáveis por desconforto ou cólica abdominal, anemia e cansaço.  
+
+============================================= Gênero: Divulgação Científica Grupo 4 =============================================
+76 A sensação de incerteza sobre o futuro das pesquisas científicas no Brasil se agravou com a divulgação de uma nota da pró-reitoria de pós-graduação da Universidade Federal do Rio de Janeiro (UFRJ). Em agosto de 2017, a entidade alertou para um possível corte das bolsas financiadas pelo Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPq) a partir de setembro de 2017. O CNPq confirmou: não tem mais recursos para honrar o pagamento das bolsas e precisa que a equipe econômica do governo libere mais verbas. Agora, alunos brasileiros de graduação, mestrado, doutorado e pós-doutorado convivem com a possibilidade de ver suas bolsas suspensas e o resultado de suas pesquisas adiados – um prejuízo imenso para o País.
+---------------------
+85 Árvores reduzem a poluição atmosférica e sonora, diminuem a temperatura em seu entorno, minimizam danos ao alterar a velocidade e a direção dos ventos, além de deixar as cidades mais bonitas. Se não forem bem cuidadas, podem cair, causando ferimentos e mortes, interrompendo vias e o fornecimento de eletricidade. Como exemplo, entre janeiro e maio de 2017, na cidade de São Paulo, caíram 2.192 árvores, o que dá uma média de 14,5 por dia. Para que os benefícios da floresta urbana superem as desvantagens, é preciso que ela seja bem cuidada. É o que pretendem três softwares desenvolvidos no Brasil para programar podas e cortes, saber qual a idade da árvore e até indicar se uma espécie pode ser plantada em determinado lugar.
+
+============================================= Gênero: Divulgação Científica Grupo 5 =============================================
+95 "Em 1930, as rádios brasileiras foram sacudidas por uma voz feminina que cantarolava os versos de Para Você Gostar de Mim (Taí), de Joubert de Carvalho. A dona da voz era Maria do Carmo Miranda da Cunha (1909-1955), uma portuguesa que chegou ao Brasil antes de completar 1 ano de vida. Carmen Miranda, a Pequena Notável (tinha 1,52 m), é até hoje a artista brasileira mais bem-paga e mais famosa no exterior. Isso é pouco, aliás: na década de 1940, era a cantora, ponto, mais bem paga dos Estados Unidos. Sua fama fez dela uma quase embaixadora brasileira, com a incumbência de levar a imagem do país pelo globo e colaborar em alianças na política internacional. "
+---------------------
+98 A água goteja nos vales e nas encostas de crateras da superfície de Marte, levantando dúvidas intrigantes sobre a existência de vida no planeta vermelho. Os achados são evidências sólidas de que água em estado líquido escurece a superfície de Marte hoje. Já era sabido que no passado existiu fluxo de água no planeta. Descritas na revista científica Nature Geoscience, as observações sugerem que essa água aparece sazonalmente, formando linhas escuras nos morros íngremes de Marte. No entanto, os cientistas ainda não sabem de onde a água vem ou se ela é adequada para manter a vida. 
+---------------------
+92 No verão boreal de 2014, pesquisadores demonstraram que um imageamento não invasivo combinado com uma técnica de marcação permite a rápida comparação e estudo de espécies de minhocas e outros animais com detalhes sem precedentes. No primeiro estudo de morfologia comparada desse tipo, a equipe de pesquisa produziu imagens tridimensionais de fibras musculares individuais e hemácias isoladas em minhocas. A técnica permitiu que os pesquisadores comparassem os órgãos internos de minhocas recém coletadas com os de espécimes de museu com 60 anos de idade em seu contexto anatômico natural, gerando ricos dados em 2D e 3D.
+
+============================================= Gênero: Divulgação Científica Grupo 6 =============================================
+48 Mal atravessam a pele e penetram em nosso corpo, microrganismos estranhos deparam com proteínas que circulam pelo sangue e funcionam como uma espécie de radar. Esse contato - tal qual uma fileira de dominó que tomba - ativa, em seqüência, outras 30 proteínas e põe o sistema de defesa do organismo em ação. Células com funções específicas chegam ao local da invasão e iniciam o combate gerando uma inflamação. 
+---------------------
+38 Todos os questionamentos referentes aos alimentos transgênicos são, em grande parte, consequências da falta de informação geral sobre o que são e como se originaram. Os problemas já começam com as terminologias utilizadas. Engenharia genética ainda é um termo muito discutido, uma vez que a atividade de manipulação das moléculas de DNA/RNA recombinante não pode ser considerada uma ciência completamente exata, pois a complexidade do sistema de genes não permite prever com certeza os resultados a que ela pode chegar. 
+---------------------
+56 O desenvolvimento de novos amplificadores é imprescindível para aumentar a capacidade e a velocidade do sistema de telecomunicações e diminuir os custos de implantação de novas redes. Com essas metas, quatro laboratórios em todo o planeta estão em uma corrida tecnológica para o aperfeiçoamento de uma nova geração de amplificador óptico chamado de Amplificador Paramétrico de Fibras Óticas. Um desses laboratórios está no Instituto de Física (IF) da Universidade Estadual de Campinas (Unicamp). 
+---------------------
+55 Sozinho em cena, o homem de roupas escuras fala sem parar, gesticula bastante e arrasta multidões. Aos 77 anos, mantém como que hipnotizadas plateias de até 8 mil pessoas num só espetáculo. Sedutor como poucos, transforma-se no melhor amigo de cada espectador, a quem narra pelo microfone alguma história que parece ter acontecido ontem.
+---------------------
+54 Em dias de enchente, esqueça o romantismo dos canais de Veneza. A cidade vira um mar de água suja e malcheirosa. Mas, como dizem os otimistas, sempre existe uma esperança. Uma barragem está sendo construída para conter a inundação na baía. E recentes estudos de vazão das marés indicam que ela pode funcionar sem causar danos ao ambiente, o que muitos temiam. 
+---------------------
+73 O progresso científico é necessariamente um processo descontínuo, em que avanços se alternam com períodos de estagnação. Disso, a história da medicina é um exemplo. Durante muito tempo predominou, na Antiguidade, a visão mágico-religiosa, segundo a qual doença era resultado de castigo dos deuses, de maldições ou de feitiçaria. Assim, a epilepsia era chamada "doença sagrada": seria a manifestação da posse do corpo por divindades. Mas então, na Grécia clássica, surgem Hipócrates e seus discípulos, sustentando que a enfermidade tinha causas puramente naturais, ligadas ao modo de vida, à alimentação, ao meio ambiente.
+---------------------
+36 Os médicos que se dedicam ao tratamento de moléstias infecciosas têm dificuldade em imaginar que existam seres suficientemente perversos para, ao invés de tentar curar, tentar provocar doenças com finalidades bélicas. Na verdade, o uso de microorganismos como armas é antigo: em 1247 os tártaros, sitiando uma cidade do Mar Negro, catapultaram cadáveres de indivíduos mortos com peste bubônica, contaminando a cidade, que se rendeu. 
+
+============================================= Gênero: Jornalístico Grupo 0 =============================================
+11 Após cinco meses de interdição, devido à morte de 31 macacos pela febre amarela, o Parque do Matão, principal área verde e de lazer de Votorantim, interior de São Paulo, reabriu nesta semana com ao menos três sobreviventes à doença. 
+---------------------
+17 Você costuma brigar e discutir o relacionamento na frente dos filhos? Saiba que isso pode ser prejudicial para o desenvolvimento e para a vida da criança. Ansiedade, culpa, insegurança, comportamento agressivo e dificuldade de se relacionar com outras pessoas são alguns dos problemas que meninos e meninas podem apresentar após presenciarem atritos constantes dos pais.
+---------------------
+41 Os dados oficiais atuais indicam que, no Brasil, gasta-se cerca de 3,5% do PIB com educação escolar. Se esse valor fosse correto, já seria baixo demais. A média mundial é de 4% a 5% do PIB e, para países com grande contingente de jovens e que superaram atrasos escolares graves, esse percentual se aproxima de 10%. Mas os valores oficiais estão superestimados.  
+---------------------
+16 A vida de uma mulher com câncer de mama em estágio considerado terminal foi salva por um tratamento pioneiro, que consiste na aplicação de 90 bilhões de células imunológicas cujo objetivo é combater o tumor. Segundo pesquisadores do Instituto Nacional do Câncer, nos EUA, o tratamento ainda é experimental, mas pode ter efeito transformador em todas as terapias de combate ao câncer.
+---------------------
+72 Música erudita, música infantil, música popular brasileira. Não importa. Todos os sons vêm encantando centenas de crianças que se encontram internadas em hospitais públicos infantis da cidade de São Paulo. Através de uma parceria inédita entre a Orquestra de Câmara (Ocam) da USP e a Sociedade de Pediatria de São Paulo, foi criado o Projeto Música & Vida. 
+
+============================================= Gênero: Jornalístico Grupo 1 =============================================
+20 Reconhecida por médicos e pela comunidade científica como uma doença – e não apenas uma tristeza profunda como muita gente ainda acredita – a depressão, segundo um recente estudo realizado pela Universidade da Califórnia em San Diego, EUA, não age apenas em uma área específica do cérebro.
+---------------------
+43 Alice no País do Quantum, livro do físico inglês Robert Gilmore, é uma alegoria do livro Alice no País das Maravilhas, mas, como diz o autor da obra, é também uma alegoria da física quântica, no sentido dicionarizado de "uma narrativa que descreve um assunto sob disfarce de outro". 
+---------------------
+22 No que se refere à criação musical, o uso de diversos instrumentos em sala de aula pode evidenciar habilidades desconhecidas, aumentar a interação com objetos e o “saber-fazer”, entre outras capacidades tão importantes nessa fase de desenvolvimento pedagógico.
+---------------------
+1 Amistosos preparatórios para a Copa são comuns. Nos dias que antecedem a competição, seleções medem forças ao redor do mundo. Mas em 2018, o Brasil terá testes de mais peso e diferentes de edições anteriores: pela primeira vez a seleção brasileira vai enfrentar um rival que também está classificado para o Mundial.
+---------------------
+18 As mulheres são menos propensas a participar do mercado de trabalho do que os homens e têm mais chances de estarem desempregadas na maior parte dos países do mundo, afirma novo estudo da Organização Internacional do Trabalho(OIT),lançado na véspera do Dia Internacional da Mulher (8 de março).
+---------------------
+15 O tema da redação do Exame Nacional do Ensino Médio (Enem) deste ano, que tratou dos desafios para a formação educacional de surdos no Brasil, surpreendeu muitos professores e candidatos por abordar uma questão tão específica. Mas para cerca de 6 mil alunos com surdez ou deficiência auditiva que fizeram a prova, o assunto foi uma oportunidade para debater os problemas vividos no dia a dia.
+---------------------
+39 Em fevereiro de 1997, a notícia da clonagem de um animal adulto foi manchete em todas as publicações do planeta. Alguns cientistas estavam atentos e Jean Baudrillard, por exemplo, em 1990, dedicou um capítulo do livro A Transparência do Mal, à discussão da clonagem. A Alteridade Radical discute o Inferno do Mesmo, ou seja, o problema da criação do clone, reprodução assexuada da espécie como um estágio terminal da sexualidade. 
+---------------------
+61 Em 1984 havia um computador para cada 125 estudantes americanos. Hoje a relação é de 14 alunos por um. A ideia de ter apenas um "laboratório" de informática, uma sala onde as crianças podiam conhecer o computador, já está ficando para trás. O objetivo agora é ter também pelo menos um terminal por classe, com as salas interligadas numa central. 
+---------------------
+62 Todo o mercado de informática respira multimídia. Os fabricantes de hardware acumulam e preparam lançamentos de computadores que trazem som, imagem e animação. Os fornecedores de software adaptam produtos, criam outros adequados para esse mundo e investem fortemente na criação de aplicativos para educação, marketing e entretenimento. Eventos e feiras dão amplo destaque ao assunto e a mídia confere alta prioridade a tudo relacionado ao tema. 
+---------------------
+2 Você já imaginou a sua vida sem ouvir nenhuma palavra? Vinte milhões de brasileiros têm alguma dificuldade para ouvir. Quanto mais cedo o problema for descoberto, maiores são as chances de cura. Para isso, o teste da orelhinha é fundamental.
+---------------------
+64 Diante da corrida frenética da preparação para o vestibular, o ensino da filosofia no 2º grau aparece para a maioria dos estudantes como perda de tempo. E para os professores, que tentam justificar sua importância, como uma tarefa quase acima de suas forças. E, no entanto, eles persistem. Têm resistido heroicamente nas escolas que mantêm a disciplina, mas dificilmente conseguem ministrá-la no terceiro ano. 
+---------------------
+65 De algum tempo para cá tornou-se comum a divulgação de notícias e matérias tendenciosas a respeito da situação das terras indígenas no Brasil e da atuação do Ministério Público Federal na defesa dos interesses e direitos das populações indígenas. 
+---------------------
+10 Se na hora do supermercado você mal presta atenção na embalagem do que está comprando, corre o risco de levar gato por lebre. Como ser saudável é a nova onda, muitas marcas destacam apenas um ou outro item ("zero gordura”, "zero açúcar” e “integral”), enquanto outras substâncias menos desejadas (corantes e conservantes) ficam quase escondidas.
+---------------------
+63 Desde o século passado a filosofia é matéria obrigatória para os alunos do 2º grau na França. Os franceses estudam um ano de filosofia, o correspondente ao terceiro colegial (ou terminal, que é como é chamado o último ano do 2º grau na França). Há 3.691 professores de filosofia de 2º grau no país. 
+---------------------
+25 Em mais um esforço para combater a proliferação de notícias falsas, o WhatsApp liberou para toda a sua base de usuários a função de aviso de mensagens encaminhadas. Para whatsapp nova funcao mensagem encaminhada visualizar a nova etiqueta, é necessário ter a atualização mais recente do app.
+
+============================================= Gênero: Jornalístico Grupo 2 =============================================
+12 A acupuntura é parte da medicina milenar chinesa e vem se mostrando uma possibilidade terapêutica útil para o tratamento de diversas enfermidades e distúrbios comportamentais nos pets. A técnica, que consiste em introduzir agulhas metálicas em pontos precisos do corpo, já popular entre as pessoas, também pode auxiliar nos tratamentos alopáticos e oncológicos em cães e gatos. 
+---------------------
+19 O Twitter dissolveu nesta semana seu time dedicado para transmissões ao vivo de vídeos, unindo a equipe antes responsável por esse aspecto a seu time de parcerias e conteúdo digital. A ideia é reduzir o foco nesse tipo de conteúdo, numa mudança de estratégia.
+
+============================================= Gênero: Jornalístico Grupo 3 =============================================
+4 A Panasonic, fornecedora de baterias da montadora norte-americana de veículos elétricos Tesla, disse que tem o objetivo de desenvolver baterias automotivas sem o uso de cobalto em um futuro próximo, em meio aos preços crescentes do metal fundamental para a produção de baterias. 
+---------------------
+8 Imagine visitar um zoológico repleto de animais já extintos, desde dinossauros a mamutes. Para muitos, esse cenário é um pesadelo distópico. Em outros, no entanto, gera muita empolgação. Mas, à medida em que a ciência avança, isso pode se tornar realidade em breve. 
+---------------------
+66 A economia do futuro, assim como a ciência que seguirá seus passos, será menos mecânica. No lugar da lógica implacável, sistemas de regras falíveis. Em vez de uma objetividade que sobrevive à coletividade, haverá o impacto crescente de infraestruturas que são antes de tudo superestruturas. Economia e cultura estarão mais próximas. 
+
+============================================= Gênero: Jornalístico Grupo 4 =============================================
+5 Quando o filme "O Show de Truman - O Show da Vida" estreou há 20 anos, os espectadores não podiam acreditar que o personagem de Jim Carrey pudesse ser algo mais que ficção. Hoje, aquela incrível história se transformou em algo terrivelmente cotidiano. 
+---------------------
+47 Pobre de quem compra computador. Não bastassem as especificações técnicas sobre as quais tem que aprender –quantos mega? e o RAM? qual a velocidade do modem?–, agora o consumidor de informática está sendo convocado a se educar sobre um novo assunto antes de ir para a loja atrás de sua engenhoca: como evitar as doenças causadas pelo computador. 
+---------------------
+21 O YouTube Music passará a concorrer com outro serviço de streaming do próprio Google, o Google Play Música. Segundo o Google, nada muda para esse serviço, que continuará a oferecer venda de música digital e a receber canções e listas de execuções subidas pelos usuários.
+---------------------
+23 Segundo reportagem publicada pelo jornal norte-americano New York Times, o Facebook compartilhou dados de usuários com 60 aplicativos sem autorização explícita. Acordos firmados com empresas como Apple, BlackBerry, Microsoft e Samsung permitiam o acesso a informações de amigos, mesmo que os usuários tivessem barrado o acesso.
+---------------------
+29 A operação de resgate dos 12 meninos e seu treinador de futebol que ficaram presos em uma rede de cavernas na Tailândia é muito complexa e perigosa. O grupo está a mais de 800 metros abaixo do solo. A rota de saída tem quatro quilômetros e vários trechos submersos.
+
+============================================= Gênero: Jornalístico Grupo 5 =============================================
+14 A relação entre cão e dono é uma das mais fortes, calcada principalmente no amor e companheirismo. Além de tornar a vida das pessoas mais feliz, ter um pet também pode ser benéfico em outros âmbitos, como a saúde. Esse convívio acaba sendo crucial para o tratamento de alguns problemas, como é o caso do autismo.
+---------------------
+71 A maioria dos adolescentes de 17 e 18 anos, alunos de escolas públicas, que vão votar para presidente da República pela primeira vez, não sabe quem é o atual presidente, nem a qual partido político pertence. Pelo menos esta é a impressão que passam jovens que residem em bairros vizinhos da Cidade Universitária. Reclamam da falta de infraestrutura de lazer em favelas e da educação ministrada nas escolas em que estudam. 
+---------------------
+69 Você nunca pisou nesses lugares. No centro do quarto andar vazio de um prédio velho da avenida São João, um homem vai atirar um coração de boi dentro de um enorme recipiente de vidro transparente, cheio de leite e suspenso por uma estrutura de metal. 
+---------------------
+6 O futuro governo espanhol do socialista Pedro Sánchez não incluirá políticos do Podemos, a formação de esquerda radical que pediu para entrar no Executivo depois de ajudar na queda do conservador Mariano Rajoy, afirmou nesta semana o número dois socialista. 
+---------------------
+70 As nanociências, bem como a nanotecnologia, contemplam o universo nanométrico, isto é, onde a dimensão física se aproxima de um bilionésimo do metro. Essa dimensão é expressa pelo prefixo nano, que quer dizer bilionésima parte da unidade. Na evolução tecnológica, é interessante notar que, na primeira metade do século passado, a eletrônica era caracterizada pelo uso de dispositivos como as válvulas, do tamanho da palma da mão, de forma que um simples aparelho de rádio era maior que uma caixa de sapatos. 
+---------------------
+40 Uma pesquisa recente em uma universidade canadense acertou os dois proverbiais coelhos com uma só cajadada: fez uma importante contribuição teórica para a biologia e abriu o caminho para futuras aplicações em medicina. A descoberta de um novo mecanismo para mutações genéticas em bactérias deu um importante estímulo a uma herética complementação da teoria darwiniana da evolução
+---------------------
+28 Mas um novo estudo, desenvolvido por pesquisadores da Universidade de Columbia, de Nova York, e publicado nesta quinta-feira pela revista PLOS Biology, traz uma conclusão pertinente sobre a função do sono: dormir tem um efeito antioxidante no organismo.
+---------------------
+26 Arqueólogos da Grécia descobriram o que acreditam ser o fragmento mais antigo conhecido da Odisseia, poema épico de Homero. Uma equipe de pesquisadores gregos e alemães encontrou o trecho em uma placa de argila entalhada na Antiga Olímpia, berço dos Jogos Olímpicos localizado na península do Peloponeso, informou o ministro da Cultura grego nesta terça-feira.
+---------------------
+13 Cerca de 1,9 milhão de pessoas, muçulmanas na maioria, travam uma luta diária por sobrevivência na Faixa de Gaza, um dos locais mais pobres e violentos do mundo. Além da miséria, do desemprego e das condições insalubres, enfrentam o medo dos tiros e das bombas disparadas por forças israelenses no interminável conflito com o Hamas. 
+---------------------
+24 O desempenho dos serviços em maio mostra um dos principais danos na economia causados pela greve dos caminhoneiros. O setor, que tem peso importante na composição do Produto Interno Bruto (PIB), caiu 3,8% no mês da paralisação. Economistas e o próprio governo já esperam menor crescimento do PIB no ano e retomada mais difícil.
+
+============================================= Gênero: Jornalístico Grupo 6 =============================================
+3 A França teve uma grande queda no número de pessoas que fumam diariamente, com 1 milhão a menos entre 2016 e 2017, segundo a agência nacional de saúde pública do país.
+---------------------
+9 Para a alegria dos fãs de "Friends", a dupla Rachel Green e Monica Geller em breve vai protagonizar mais uma ocasião especial. Só que agora na vida real. É que Jennifer Aniston será dama de honra do casamento de Courteney Cox com o músico Johnny McDaid, da banda Snow Patrol.
+---------------------
+67 No começo da década de 60, um crítico observava que no Brasil se faziam filmes que, embora tendo público numeroso e entusiasta, não eram considerados propriamente cinema pelos seus produtores e espectadores. Cinema de verdade era o que nos vinha dos Estados Unidos ou talvez da Europa, muito diferente das nossas chanchadas. 
+
+============================================= Gênero: Literário Grupo 0 =============================================
+35 Com efeito, um dia de manhã, estando a passear na chácara, pendurou-se-me uma ideia no trapézio que eu tinha no cérebro. Uma vez pendurada, entrou a bracejar, a pernear, a fazer as mais arrojadas cabriolas de volantim, que é possível crer. Eu deixei-me estar a contemplá-la. Súbito, deu um grande salto, estendeu os braços e as pernas, até tomar a forma de um X: decifra-me ou devoro-te. 
+
+============================================= Gênero: Literário Grupo 1 =============================================
+68 Eu sou o começo de uma nova era. Vocês não entendem que eu sou um sinal? Vocês nunca me olharam durante décadas. Me odiavam porque eu sou sujo, feio, pobre. Sempre me rasparam de suas consciências, como hoje querem me raspar pelas balas. Hoje eu sou o início de vossa consciência social. 
+---------------------
+51 Cabe à população cuidar da cidade, ajudar a planejá-la, escolher para onde ela deve caminhar. Mas fica difícil tomar qualquer tipo de iniciativa num emaranhado de termos, como "operação urbana consorciada", "direito de preempção", "outorga onerosa do direito de construir" ou "edificação compulsória". Até o conceito de Plano Diretor, tão comentado hoje em dia, é incompreensível para a maioria das pessoas. 
+---------------------
+45 O romance Parábola do Cágado Velho, do escritor Pepetela, ao dar voz aos homens do campo que mais sofreram com as guerras, continua na mesma clave de repensar, a contrapelo, a história de Angola. Ao adotar a parábola como estratégia narrativa, evoca, no plano ficcional, por comparação, realidades históricas vivenciadas, em diferentes tempos, pelas populações do interior. 
+---------------------
+31 É inútil dizer que, por melhores esforços empregados, nenhum pregador se descobriu, bom ou mau, que quisesse ir tomar o lugar do querido mestre. Davam-se todos por igualmente atacados da garganta, como se a asma de La Rose, à semelhança do que sucedia com o seu estilo oratório, se estendesse de improviso por todos eles, desde o mais pretensioso até ao mínimo dos numerosos pregadores sagrados. 
+
+============================================= Gênero: Literário Grupo 2 =============================================
+32 São dez horas da noite. Os sinos tocaram a recolher. Augusto está só, sentado junto de sua mesa, tendo diante de seus olhos seis ou sete livros e papéis, pena se toda essa série de coisas que compõem a mobília do estudante. 
+---------------------
+34 Além do compadre e da filha, as únicas pessoas que o visitavam até então, nos últimos dias, era visto entrar em sua casa, três vezes por semana e em dias certos, um senhor baixo, magro, pálido, com um violão agasalhado numa bolsa de camurça. 
+
+============================================= Gênero: Literário Grupo 3 =============================================
+30 Rubião suspirou, cruzou as pernas, e bateu com as borlas do chambre sobre os joelhos. Sentia que não era inteiramente feliz; mas sentia também que não estava longe a felicidade completa. Recompunha de cabeça uns modos, uns olhos, uns requebros sem explicação, a não ser esta, que ela o amava, e que o amava muito. 
+---------------------
+33 Era a hora do trabalho árduo do tropeiro, principalmente quando a tropa está puxada ou batida, isto é, magra, fatigada de longas jornadas. Hora de aperto em que o tropeiro, prático no ofício, não distrai a atenção para cousa alguma, porque, à tarde, o animal, carregado, pode caminhar mais uma hora; porém, parando no pouso, suporta, de pé, um minuto. 
+
+
