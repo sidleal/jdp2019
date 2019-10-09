@@ -1,4 +1,4 @@
-# jdp2019 - clustering experiments
+# JDP2019 - Métodos de Clusterização para a Criação de Corpus
 
 ## NILC
 Este trabalho é parte do meu doutorado no ICMC-USP, vinculado ao laboratório do NILC - Núcleo Interinstitucional de Linguística Computacional.
