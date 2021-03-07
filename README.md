@@ -15,7 +15,7 @@ Este trabalho é parte do meu doutorado no ICMC-USP, vinculado ao laboratório d
     title = {Métodos de Clusterização para a Criação de Corpus para Rastreamento Ocular durante a Leitura de Parágrafos em Português},
     booktitle = {JDP 2019 - Jornada de Descrição do Português},
     year = {2019},
-    pages = {?–?},
+    pages = {270–278},
     month = {Outubro},
     date = {15-18},
     address = {Salvador, Bahia, Brasil},
